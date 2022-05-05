@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Keyman Log,`,
+  title: `Keyman Log`,
   description: `키맨의 개발일지 `,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.keyman.io`,
