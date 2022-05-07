@@ -1,24 +1,10 @@
 import { Link, StaticQuery, graphql } from 'gatsby';
-import React, { useRef, memo } from 'react';
+import React, { useRef, memo, useState, useEffect } from 'react';
 // import Post from '../../models/post';
 // import PostSearch from '../post-search';
 import './style.scss';
 
-const PageHeader = memo(({ siteTitle }) => {
-  const markerRef = useRef();
-  const aboutRef = useRef();
-  const postsRef = useRef();
-
-  const onAboutClick = () => {
-    markerRef.current.style.left = aboutRef.current.offsetLeft + 'px';
-    markerRef.current.style.width = aboutRef.current.offsetWidth + 'px';
-  };
-
-  const onPostsClick = () => {
-    markerRef.current.style.left = postsRef.current.offsetLeft + 'px';
-    markerRef.current.style.width = postsRef.current.offsetWidth + 'px';
-  };
-
+const PageHeader = ({ siteTitle }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -47,25 +33,10 @@ const PageHeader = memo(({ siteTitle }) => {
               </Link>
             </div>
             <div className="trailing-section">
-              <div id="marker" ref={markerRef}></div>
-              <Link
-                className="link"
-                to="/about"
-                onClick={() => {
-                  onAboutClick();
-                }}
-                ref={aboutRef}
-              >
+              <Link className="link" id="menu" to="/about">
                 about
               </Link>
-              <Link
-                className="link"
-                to="/posts"
-                onClick={() => {
-                  onPostsClick();
-                }}
-                ref={postsRef}
-              >
+              <Link className="link" id="menu" to="/posts">
                 posts
               </Link>
               {/* <PostSearch
@@ -77,6 +48,6 @@ const PageHeader = memo(({ siteTitle }) => {
       )}
     />
   );
-});
+};
 
 export default PageHeader;

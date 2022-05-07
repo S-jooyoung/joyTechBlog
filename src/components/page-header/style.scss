@@ -28,15 +28,25 @@
       align-items: center;
       position: relative;
 
-      #marker {
-        position: absolute;
-        left: 0;
-        height: 4px;
+      #menu {
+        position: relative;
+      }
+
+      #menu:before {
+        content: '';
         width: 0;
-        background-color: rgb(54, 121, 222) !important;
-        bottom: -8px;
+        height: 5px;
+        display: block;
+        position: absolute;
+        margin-top: 0.2em;
+        border-bottom: 3px solid rgb(54, 121, 222);
         transition: 0.5s;
-        border-radius: 4px;
+        bottom: 0;
+        left: 0;
+      }
+
+      #menu:hover::before {
+        width: 100%;
       }
 
       .link {
