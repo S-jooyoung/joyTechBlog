@@ -1,5 +1,5 @@
 import { Link, StaticQuery, graphql } from 'gatsby';
-import React, { useRef, memo, useState, useEffect } from 'react';
+import React from 'react';
 // import Post from '../../models/post';
 // import PostSearch from '../post-search';
 import './style.scss';

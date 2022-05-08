@@ -21,6 +21,9 @@
         font-weight: 700;
         font-size: 20px;
       }
+      .primary {
+        color: var(--highlight-color) !important;
+      }
     }
 
     .trailing-section {
@@ -39,7 +42,7 @@
         display: block;
         position: absolute;
         margin-top: 0.2em;
-        border-bottom: 3px solid rgb(54, 121, 222);
+        border-bottom: 3px solid var(--highlight-color);
         transition: 0.5s;
         bottom: 0;
         left: 0;
@@ -55,15 +58,6 @@
         @include md {
           margin-right: 20px;
         }
-      }
-    }
-
-    .primary {
-      color: rgb(54, 121, 222) !important;
-
-      @include md {
-        font-weight: 700;
-        font-size: 30px;
       }
     }
   }
