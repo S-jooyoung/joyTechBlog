@@ -29,7 +29,8 @@ const PageHeader = ({ siteTitle }) => {
           <div className="page-header">
             <div className="front-section">
               <Link className="link" to="/">
-                {siteTitle} <span className="primary">,</span>
+                {siteTitle}
+                <span className="primary">,</span>
               </Link>
             </div>
             <div className="trailing-section">

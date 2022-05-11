@@ -13,28 +13,30 @@
     @include content-max-width;
 
     .link {
-      font-weight: 700;
-      font-size: 17px;
       color: var(--primary-text-color);
 
       @include md {
         font-weight: 700;
         font-size: 20px;
       }
-      .primary {
-        color: var(--highlight-color) !important;
-      }
+    }
 
-      .img {
-        width: 200px;
+    .front-section {
+      .link {
+        position: relative;
+        padding-right: 10px;
+
+        .primary {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          color: var(--highlight-color) !important;
+          font-size: 30px;
+        }
       }
     }
 
     .trailing-section {
-      display: flex;
-      align-items: center;
-      position: relative;
-
       #menu {
         position: relative;
       }
