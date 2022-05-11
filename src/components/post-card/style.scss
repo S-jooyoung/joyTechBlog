@@ -17,17 +17,14 @@
     border-radius: 6px;
     padding: 15px;
     margin-bottom: 15px;
-
     color: var(--primary-text-color);
-
-    cursor: pointer;
-    transition: transform 0.2s;
 
     &:hover {
       .title {
         text-decoration: underline var(--highlight-color);
         text-underline-position: under;
         text-decoration-thickness: 3px;
+        transition-duration: 0.8s;
       }
     }
 
@@ -67,10 +64,6 @@
 
         .category {
           margin-left: 4px;
-
-          &:hover {
-            text-decoration: underline;
-          }
         }
       }
     }
