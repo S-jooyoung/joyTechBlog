@@ -25,7 +25,9 @@
 
     &:hover {
       .title {
-        text-decoration: underline;
+        text-decoration: underline var(--highlight-color);
+        text-underline-position: under;
+        text-decoration-thickness: 3px;
       }
     }
 
@@ -34,22 +36,21 @@
     }
 
     .title {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 7px;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
       line-height: 1.4;
     }
 
     .description {
-      font-size: 13px;
+      font-size: 16px;
       margin-bottom: 10px;
       line-height: 20px;
-      color: var(--primary-text-color);
-
+      color: var(--secondary-text-color);
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 2;
       /* number of lines to show */
       -webkit-box-orient: vertical;
     }
