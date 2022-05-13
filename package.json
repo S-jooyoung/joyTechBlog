@@ -1,5 +1,5 @@
 {
-  "name": "Keyman Log",
+  "name": "keyman",
   "private": false,
   "description": "A neat blog theme for developers",
   "version": "3.0.0",
@@ -57,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog"
+    "url": "https://github.com/S-jooyoung/S-jooyoung.github.io"
   },
   "bugs": {
-    "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog/issues"
+    "url": "https://github.com/S-jooyoung/S-jooyoung.github.io/issues"
   }
 }
