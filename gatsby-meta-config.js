@@ -2,7 +2,7 @@ module.exports = {
   title: `s-jooyoung.github.io`,
   description: `키맨의 개발일지 `,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://s-jooyoung.github.io/`,
+  siteUrl: `https://s-jooyoung.github.io`,
   ogImage: `/keyman.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
