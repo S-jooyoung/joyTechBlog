@@ -3,8 +3,8 @@ emoji: 👰🏻‍♀️
 title: 모바일 청첩장 만들기 회고
 date: '2022-05-26 17:00:00'
 author: 키맨
-tags: 프로젝트 github-pages gatsby
-categories: 프로젝트
+tags: RETROSPECT github-pages gatsby
+categories: RETROSPECT
 ---
 
 > 올가을 우리 형이 결혼식을 하게 되는데, 조금 특별한 선물을 해주고 싶다는 생각에 모바일 청첩장을 만들어주자고 생각하였다. 기존 모바일 청첩장은 결혼식이 끝나면 사이트도 없어지기에 내가 직접 만들어서 평생 간직할 수 있는 사이트를 선물하면 조금 더 특별할 거로 생각했다.

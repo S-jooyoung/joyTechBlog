@@ -3,8 +3,8 @@ emoji: 🧑🏻‍💻
 title: 나만의 기술 블로그 만들기
 date: '2022-05-11 19:00:00'
 author: 키맨
-tags: 프로젝트 github-pages gatsby
-categories: 프로젝트
+tags: PROJECT github-pages gatsby
+categories: PROJECT
 ---
 
 > 나는 기술 블로그를 이것저것 많이 만들어보았다. Tistory, velog 등 많은 기술 블로그들을 경험해보았는데 항상 개발자라면 나만의 블로그가 있으면 좋겠다는 생각이 있었고 그 생각은 시간이 지날수록 더 심해졌다. 그래서 기술 블로그를 만들어보자! 하면서 검색하던 도중, 지금 열심히 공부하고있는 React 툴 기반으로 만들어진 Gastsby를 알게 되었다.
