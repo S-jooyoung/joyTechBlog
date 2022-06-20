@@ -1,7 +1,7 @@
 ---
-emoji: 🧑🏻‍💻
-title: [프로그래머스 Lv.2] 거리두기 확인하기 - 자바스크립트
-date: '2022-06-20 23:10:00'
+emoji: 📝
+title: (프로그래머스 Lv.2) 거리두기 확인하기 - 자바스크립트
+date: '2022-06-20 23:30:00'
 author: 키맨
 tags: ALGORITHM github-pages gatsby
 categories: ALGORITHM
