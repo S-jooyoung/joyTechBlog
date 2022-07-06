@@ -1,6 +1,6 @@
 ---
 emoji: 🛠
-title: [React] 테스트 코드란 무엇인가?
+title: (React) 테스트 코드란 무엇인가?
 date: '2022-07-06 21:42:00'
 author: 키맨
 tags: STUDY github-pages gatsby
