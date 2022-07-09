@@ -1,7 +1,7 @@
 ---
 emoji: 🛠
 title: 좋은 테스트 코드란 무엇인가?
-date: '2022-07-06 21:42:00'
+date: '2022-07-09 16:40:00'
 author: 키맨
 tags: STUDY github-pages gatsby
 categories: STUDY
