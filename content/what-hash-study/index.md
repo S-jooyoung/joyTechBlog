@@ -1,10 +1,10 @@
 ---
 emoji: 📚
-title: (알고리즘)해시(Hash) 알고리즘
+title: (알고리즘) 해시(Hash) 알고리즘
 date: '2022-07-11 23:30:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: ALGORITHM github-pages gatsby
+categories: ALGORITHM
 ---
 
 > 막연하게 해시 알고리즘의 원리를 알지 못하고 코딩 테스트를 준비하면서 부족함을 느껴 여러 자료들을 모아 정리했습니다.🧑🏻‍💻

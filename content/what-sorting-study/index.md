@@ -1,10 +1,10 @@
 ---
 emoji: 📚
-title: (알고리즘)정렬 알고리즘 - JavaScript
+title: (알고리즘) 정렬 알고리즘 - JavaScript
 date: '2022-07-10 23:42:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: ALGORITHM github-pages gatsby
+categories: ALGORITHM
 ---
 
 > 기본적인 정렬 알고리즘의 원리를 파악하고 어떤 식으로 구현할 수 있는지 알아봅시다.🧑🏻‍💻
