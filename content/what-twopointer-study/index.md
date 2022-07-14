@@ -43,21 +43,22 @@ categories: ALGORITHM
 ### 동작방식 🐎
 
 ![](https://velog.velcdn.com/cloudflare/jooyoung/0e84ce67-3e17-498f-b561-a204c3b4146c/1.png)
+
 ![](https://velog.velcdn.com/cloudflare/jooyoung/34b2d674-79d5-45ac-ae4e-d5d0c002df15/2.png)
+
 ![](https://velog.velcdn.com/cloudflare/jooyoung/66a9510c-760e-4d44-960f-326ce04c3c1c/3.png)
+
 ![](https://velog.velcdn.com/cloudflare/jooyoung/2289b08f-5bce-4420-bfee-a1772b830006/4.png)
+
 ![](https://velog.velcdn.com/cloudflare/jooyoung/f06a9c33-ad2f-42ac-aa06-0c2bdcbe2bc8/5.png)
+
 이런 식으로 `5`보다 작다면 `rt`를 증가시키고 크다면 `lt`를 증가시키면서 값을 구하다 보면 `5`일 때의 값이 나오게 된다. 그럴 때마다 `answer`의 값을 증가시켜주면서 반복문을 끝까지 돌면 된다.
 
 > `투 포인터 알고리즘`과 비슷한 `슬라이딩 윈도우(sliding window)`라는 알고리즘도 존재합니다. `투 포인터`와 어떤 차이점이 있는지 밑에서 확인해 보겠습니다.
 
----
-
 ## 슬라이딩 윈도우(sliding window)란?🤔
 
 마치 창문을 한쪽으로 밀면서 문제를 푸는 것과 모양이 유사해서 붙여진 이름이다. 투 포인터처럼 구간을 훑으면서 지나간다는 공통점은 있으나 어느 순간에도 그 구간의 넓이가 동일하다는 차이점이 있다. 구간의 넓이가 주어졌을 때는 슬라이딩 윈도우로 문제를 풀면 되겠다.
-
----
 
 ## 슬라이딩 윈도우(sliding window) 예제 📝
 
@@ -82,6 +83,7 @@ categories: ALGORITHM
 ### 최대매출 동작방식 🐎
 
 ![](https://velog.velcdn.com/cloudflare/jooyoung/a33e2846-dcaf-44d5-ac02-9456caec1f96/%E1%84%83%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3.png)
+
 `위에서 말한 해결 방식`처럼 처음 시작은 k 길이만큼 -3,3,1을 `res`에 더해준다. 그런다음 다음으로 넘어갈때는 문이 미끄러지는 거와 같이 오른쪽으로 문이 1칸 가게된다. 그때의 `res`값은 -3을 더해주고 뒤에 값 -3을 빼준다. 이런식으로 쭉 진행한다면 반복문이 한번 다 돌면 값이 나오므로 시간 복잡도는 `O(n)`이 된다.
 
 <br/>
