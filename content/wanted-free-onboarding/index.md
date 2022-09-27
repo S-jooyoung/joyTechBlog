@@ -1,7 +1,7 @@
 ---
 emoji: 📝
 title: (CSR/SSR with Next.js) 원티드 프리온보딩 챌린지 10월 사전과제
-date: '2022-09-26 21:00:00'
+date: '2022-09-27 11:56:00'
 author: 키맨
 tags: STUDY github-pages gatsby
 categories: STUDY
