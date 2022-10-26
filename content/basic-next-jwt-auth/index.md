@@ -1,7 +1,7 @@
 ---
 emoji: 🔐
 title: 쿠키 vs 세션 vs 토큰 이해하기
-date: '2022-10-22 11:00:00'
+date: '2022-10-26 17:54:00'
 author: 키맨
 tags: STUDY github-pages gatsby
 categories: STUDY
