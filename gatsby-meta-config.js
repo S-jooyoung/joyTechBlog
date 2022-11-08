@@ -33,16 +33,20 @@ module.exports = {
       {
         date: '',
         activity: '',
-        links: {
-          github: '',
-          post: '',
-          googlePlay: '',
-          appStore: '',
-          demo: '',
-        },
+        link: '',
       },
       // ========================================================
       // ========================================================
+      {
+        date: '2022.11 ~ ',
+        activity: 'Staybility Frontend Developer',
+        link: 'https://www.staybility.co.kr/',
+      },
+      {
+        date: '2022.07 ~ 2022.09',
+        activity: 'Star Law Firm Frontend Developer',
+        link: 'https://www.star-law.com/',
+      },
       {
         date: '2021.09 ~ 2022.02',
         activity: '대구 ICT 산업 혁신아카데미 4기',

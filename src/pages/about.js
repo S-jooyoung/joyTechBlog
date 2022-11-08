@@ -47,13 +47,7 @@ export const pageQuery = graphql`
           timestamps {
             date
             activity
-            links {
-              post
-              github
-              demo
-              googlePlay
-              appStore
-            }
+            link
           }
 
           projects {

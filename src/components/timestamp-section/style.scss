@@ -1,7 +1,5 @@
 @use '../../styles/mixins'as *;
 
-
-
 .timestamp-section {
   display: flex;
   flex-direction: column;
@@ -64,8 +62,13 @@
       }
 
       .activity {
+        color: #828282;
         line-height: 23px;
         width: 100%;
+      }
+
+      .activity:hover {
+        color: var(--highlight-color);
       }
     }
   }
