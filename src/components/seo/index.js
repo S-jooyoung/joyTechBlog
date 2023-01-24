@@ -57,7 +57,13 @@ function Seo({ description, title }) {
           content: `website`,
         },
       ]}
-    />
+    >
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4083591465738564"
+        crossorigin="anonymous"
+      ></script>
+    </Helmet>
   );
 }
 
