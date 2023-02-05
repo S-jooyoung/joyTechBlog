@@ -26,7 +26,7 @@ const createBlogPages = ({ createPage, results }) => {
 
 const createPostsPages = ({ createPage, results }) => {
   const categoryTemplate = require.resolve(`./src/templates/category-template.js`);
-  const categorySet = new Set(['All']);
+  const categorySet = new Set(['모두']);
   const { edges } = results.data.allMarkdownRemark;
 
   edges.forEach(({ node }) => {
@@ -39,7 +39,7 @@ const createPostsPages = ({ createPage, results }) => {
   createPage({
     path: `/posts`,
     component: categoryTemplate,
-    context: { currentCategory: 'All', edges, categories },
+    context: { currentCategory: '모두', edges, categories },
   });
 
   categories.forEach((currentCategory) => {
@@ -59,7 +59,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
   const results = await graphql(`
-    {
+    query {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
         edges {
           node {
@@ -72,6 +72,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               categories
               title
               date(formatString: "MMMM DD, YYYY")
+              thumbnail {
+                childImageSharp {
+                  fluid(maxWidth: 700) {
+                    src
+                  }
+                }
+              }
             }
           }
           next {

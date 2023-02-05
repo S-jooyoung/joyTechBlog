@@ -10,15 +10,16 @@ import PostTabs from '../components/post-tabs';
 
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
+  console.log(posts);
   const { author, language } = data.site.siteMetadata;
-  const categories = ['All', ...getUniqueCategories(posts)];
+  const categories = ['모두', ...getUniqueCategories(posts)];
   const featuredTabIndex = categories.findIndex((category) => category === 'featured');
   const [tabIndex, setTabIndex] = useState(featuredTabIndex === -1 ? 0 : featuredTabIndex);
   const onTabIndexChange = useCallback((e, value) => setTabIndex(value), []);
 
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="조이 기술 블로그, 조이 테크" />
       <Bio author={author} language={language} />
       <PostTabs
         posts={posts}
@@ -44,6 +45,13 @@ export const pageQuery = graphql`
             categories
             title
             date(formatString: "MMMM DD, YYYY")
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 700) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug

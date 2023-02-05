@@ -1,13 +1,15 @@
 module.exports = {
-  title: `Keyman Log`,
-  description: `키맨의 개발일지 `,
+  title: `oy`,
+  type: `tech`,
+  logo: `/logo.svg`,
+  description: `조이 기술 블로그, 조이 테크`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://s-jooyoung.github.io`,
-  siteMap: `https://s-jooyoung.github.io/sitemap-pages.xml`,
-  ogImage: `/keyman.png`, // Path to your in the 'static' folder
+  siteUrl: `https://s-jooyoung.github.io`, // https://s-jooyoung.github.io
+  siteMap: `https://s-jooyoung.github.io/sitemap-pages.xml`, // https://s-jooyoung.github.io/sitemap-pages.xml
+  ogImage: `/ogImage.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: `S-jooyoung/S-jooyoung.github.io`, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `S-jooyoung/S-jooyoung.github.io`, // S-jooyoung/S-jooyoung.github.io
     },
   },
   ga: 'G-J3BX7D8H6K', // Google Analytics Tracking ID
@@ -15,12 +17,13 @@ module.exports = {
     name: `신주영`,
     bio: {
       role: `개발자`,
-      description: ['꾸준히 기록하는', '꾸준히 행동하는', '꾸준히 함께하는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      description:
+        '글 쓰는 것을 좋아하는 프론트엔드 개발자입니다. 온라인에서는 조이라는 닉네임으로 활동하고 있습니다.',
+      thumbnail: 'myPicture.svg', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/S-jooyoung`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
+      linkedIn: ``,
       email: `jooyoung.dev@gmail.com`,
     },
   },

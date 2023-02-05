@@ -3,13 +3,12 @@ emoji: 📝
 title: (leetCode)Search in Rotated Sorted Array - 타입스크립트
 date: '2022-09-19 23:55:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 이번에도 리드 코드의 문제를 들고 왔습니다. 부쩍 알고리즘 문제를 많이 포스팅하고 있는데요. 다음에는 현재 작업 중인 프로젝트를 진행하며 생겼던 문제에 관하여 포스팅해보도록 할 테니 기대해주세요 🥰
-
-<img alt="leetcode.jpeg" src="./leetcode.jpeg" >
 
 ## 🤔 문제 설명
 

@@ -3,13 +3,12 @@ emoji: 📝
 title: (CSR/SSR with Next.js) 원티드 프리온보딩 챌린지 10월 사전과제
 date: '2022-09-27 11:56:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 짧은 시간 동안 집중하여 코딩 공부를 하고자 원티드에서 주최한 프리온보딩 프론트엔드 챌린지를 참가하게 되었습니다. 이번에는 프리온보딩 사전과제를 포스팅하며 CSR/SSR이 정확히 어떤 것인지 Next.js 파일구조는 어떻게 되는지 알려드리도록 하겠습니다.🥰
-
-<img alt="freeOnboarding.jpeg" src="./freeOnboarding.jpeg" >
 
 ## 🤔 CSR(Client-side Rendering)이란 무엇이며, 그것의 장단점에 대하여 설명해주세요.
 

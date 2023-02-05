@@ -11,6 +11,8 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          type
+          logo
           author {
             name
             social {
@@ -21,11 +23,11 @@ const Layout = ({ children }) => {
       }
     }
   `);
-  const { title, author } = data.site.siteMetadata;
+  const { title, type, logo, author } = data.site.siteMetadata;
 
   return (
     <div className="page-wrapper">
-      <PageHeader siteTitle={title || `Title`} />
+      <PageHeader siteTitle={title || `Title`} type={type || `Type`} logo={logo || `Logo`} />
       <main className="page-content">{children}</main>
       <PageFooter
         author={author.name || `Author`}

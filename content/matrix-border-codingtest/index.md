@@ -3,13 +3,12 @@ emoji: 📝
 title: (프로그래머스 Lv.2) 행렬 테두리 회전하기 - 자바스크립트
 date: '2022-06-25 23:30:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 이번에는 2021 Dev-matching: 웹 백엔드 개발자(상반기)에 낸 문제의 풀이를 포스팅해 보도록 하겠습니다. 간단하게 for 문과 stack을 사용하여 해결하였는데 더 좋은 풀이가 있으시다면 밑에 댓글로 알려주시면 감사하겠습니다. 🥰
-
-<img src = "https://blog.kakaocdn.net/dn/tTyNR/btri4448gmJ/WDioiw2PNFmZjqjaLU58Vk/img.png" >
 
 ## 🤔 문제 설명
 

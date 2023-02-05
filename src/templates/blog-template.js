@@ -57,6 +57,13 @@ export const pageQuery = graphql`
         categories
         author
         emoji
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         slug
@@ -72,6 +79,13 @@ export const pageQuery = graphql`
         categories
         author
         emoji
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         slug
@@ -87,6 +101,13 @@ export const pageQuery = graphql`
         categories
         author
         emoji
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         slug

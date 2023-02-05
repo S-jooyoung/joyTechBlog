@@ -6,10 +6,10 @@ function PageFooter({ author, githubUrl }) {
     <footer className="page-footer-wrapper">
       <p className="page-footer">
         © {new Date().getFullYear()}
-        &nbsp;
-        <a href={githubUrl}>{author}</a>
-        &nbsp;powered by
-        <a href="https://github.com/S-jooyoung/S-jooyoung.github.io">&nbsp;S-jooyoung.github.io</a>
+        &nbsp; &nbsp;powered by
+        <a href="https://github.com/S-jooyoung">
+          &nbsp;<a href={githubUrl}>{author}</a>
+        </a>
       </p>
     </footer>
   );

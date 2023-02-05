@@ -2,9 +2,14 @@
 
 .page-header-wrapper {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 50;
   justify-content: center;
   width: 100%;
   height: 60px;
+  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+  background-color: var(--background-color);
 
   .page-header {
     display: flex;
@@ -16,8 +21,36 @@
       color: var(--primary-text-color);
 
       @include md {
-        font-weight: 700;
-        font-size: 20px;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+
+    .link-logo {
+      display: flex;
+      align-items: center;
+      font-size: 19px;
+      font-weight: 400;
+
+      .logo {
+        height: 27px;
+      }
+    }
+
+    .introduce {
+      color: var(--introduce-text-color);
+      background-color: var(--highlight-color);
+      border-radius: 6px;
+      padding: 7px 12px;
+
+      &:hover {
+        transition: 0.5s;
+        background-color: var(--highlight-hover-color);
+      }
+
+      @include md {
+        font-weight: 600;
+        font-size: 15px;
       }
     }
 
@@ -27,11 +60,9 @@
         padding-right: 10px;
 
         .primary {
-          position: absolute;
-          bottom: -7px;
-          right: 0px;
           color: var(--highlight-color) !important;
-          font-size: 30px;
+          font-weight: 700;
+          margin-right: 3px;
         }
       }
     }

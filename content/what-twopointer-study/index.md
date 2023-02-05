@@ -3,8 +3,9 @@ emoji: 📚
 title: (알고리즘) 투포인터 + 슬라이딩 윈도우
 date: '2022-07-14 23:13:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 코딩 테스트 심심치 않게 나오는 `투 포인터 알고리즘`과 `슬라이딩 윈도우`에 대한 개념과 원리를 파악하고자 포스팅했습니다. 🧑🏻‍💻

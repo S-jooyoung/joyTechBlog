@@ -3,13 +3,12 @@ emoji: 🛠
 title: 좋은 테스트 코드란 무엇인가?
 date: '2022-07-09 16:40:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 저번 포스팅에 [테스트 코드란 무엇인가?](https://s-jooyoung.github.io/what-testCode-study/) 을 포스팅하였습니다. 그렇다면 이런 질문이 나올 수 있는데요. "테스트 코드는 뭔지 알겠는데 어떻게 하면 잘 작성할 수 있어?" 이 질문에 답이 될 수 있는 좋은 테스트 코드란 무엇인지에 대하여 포스팅해 보도록 하겠습니다.
-
-<img src= "https://bunny.jjalbot.com/2016/10/HkZmHwTLR/20150910_55f10fab22ac9.gif" width = "100%">
 
 ## 서론 🕵🏻‍♂️
 

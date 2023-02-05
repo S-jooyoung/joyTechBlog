@@ -3,13 +3,12 @@ emoji: 🪙
 title: (Next.js) JWT를 활용한 인증 구현
 date: '2022-10-26 23:50:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 전에 포스팅한 [쿠키 vs 세션 vs 토큰](https://s-jooyoung.github.io/basic-next-jwt-auth/)의 이론을 테스트하고자 JWT를 활용한 인증, 인가 부분을 실습해보겠습니다.😁
-
-<img alt="jwt.png" src="./jwt.png" >
 
 ## 🤔 JWT(Json Web Token)란?
 

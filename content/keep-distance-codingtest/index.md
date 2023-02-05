@@ -3,13 +3,12 @@ emoji: 📝
 title: (프로그래머스 Lv.2) 거리두기 확인하기 - 자바스크립트
 date: '2022-06-20 23:30:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 지금부터 코딩테스트를 연습하며 괜찮았던 문제들을 포스팅해 보려고 합니다. 한 번에 많은 시간을 할애하지는 못하지만, 꾸준히 공부하며 알고리즘 카테고리를 채워나가 보겠습니다. 🥰.
-
-<img src = "https://blog.kakaocdn.net/dn/tTyNR/btri4448gmJ/WDioiw2PNFmZjqjaLU58Vk/img.png" >
 
 ## 🤔 문제 설명
 

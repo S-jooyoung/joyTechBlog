@@ -3,13 +3,12 @@ emoji: 🛠
 title: 테스트 코드란 무엇인가?
 date: '2022-07-06 21:42:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 개발자라면 꼭 알아야 하는 테스트 코드!! 라는 말을 많이 들어보셨을 텐데요. 저 또한 이야기는 많이 들었지만, 정확히 왜 작성해야 하고 각 각의 의미가 어떤 것인지 상기시키기 위하여 포스팅해 보도록 하겠습니다.
-
-<image src="https://bunny.jjalbot.com/2019/01/cl-H9wkxrn/RLRlP6kQU.png">
 
 ## 테스트 코드란?🧐
 

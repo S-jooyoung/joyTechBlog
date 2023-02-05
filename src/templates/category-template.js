@@ -1,6 +1,5 @@
 import React, { useMemo, useCallback } from 'react';
 import { navigate } from 'gatsby';
-
 import Layout from '../layout';
 import Seo from '../components/seo';
 import Post from '../models/post';
@@ -15,7 +14,6 @@ function CategoryTemplate({ pageContext }) {
     [categories, currentCategory],
   );
   const posts = edges.map(({ node }) => new Post(node));
-
   const onTabIndexChange = useCallback(
     (e, value) => {
       if (value === 0) return navigate(`/posts`);
@@ -26,7 +24,7 @@ function CategoryTemplate({ pageContext }) {
 
   return (
     <Layout>
-      <Seo title="Posts" />
+      <Seo title="포스트 | 조이 기술 블로그, 조이 테크" />
       <CategoryPageHeader title={categories[currentTabIndex]} subtitle={`${posts.length} posts`} />
       <PostTabs
         tabIndex={currentTabIndex}

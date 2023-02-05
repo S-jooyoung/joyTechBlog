@@ -3,13 +3,12 @@ emoji: 🐳
 title: (docker) postgres 및 app Docker Compose 연결하기
 date: '2022-09-20 11:00:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 이번에는 docker-compose를 사용하여 다중 컨테이너 앱 만들기 포스팅을 가지고 왔습니다. 간략하게 예시를 보여드리도록 하겠습니다. 😁
-
-<img alt="docker.png" src="./docker.png" >
 
 ## 🤔 docker-compose란?
 

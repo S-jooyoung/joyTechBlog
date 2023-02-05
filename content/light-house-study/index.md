@@ -3,13 +3,12 @@ emoji: 📈
 title: lighthouse란 무엇인가?
 date: '2022-06-22 23:30:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './light_house_01.png'
 ---
 
 > 리액트 성능 최적화를 측정할 때 사용했던 도구를 한번 소개해보려고 합니다. 간단하게 라이트하우스란 어떤 것인지 라이트하우스에서 나오는 지표들은 어떤 의미를 가졌는지 설명하겠습니다.
-
-![light_house_01.png](light_house_01.png)
 
 ## 🤔 lighthouse란 무엇인가?
 

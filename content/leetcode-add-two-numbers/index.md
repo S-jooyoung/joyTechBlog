@@ -3,13 +3,12 @@ emoji: 📝
 title: (leetCode)Add Two Numbers - 타입스크립트
 date: '2022-09-16 23:59:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 이번에도 leetCode문제를 풀고 그에 대한 해설을 포스팅해 보도록 하겠습니다. 개인적으로 코딩을 하며 재밌었던 문제였습니다.🥰
-
-<img alt="leetcode.jpeg" src="./leetcode.jpeg" >
 
 ## 🤔 문제 설명
 

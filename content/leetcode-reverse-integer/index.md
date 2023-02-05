@@ -3,13 +3,12 @@ emoji: 📝
 title: (leetCode)Reverse Integer - 타입스크립트
 date: '2022-09-15 23:51:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 프로그래머스의 알고리즘 문제만 풀다 우연히 leetcode 사이트를 알게 되었습니다. 여기 있는 문제들을 타입스크립트로 풀면 좋을 거 같아 사람들이 많이 풀어본 문제들을 위주로 풀어보고 포스팅해 보도록 하겠습니다. 🥰
-
-<img alt="leetcode.jpeg" src="./leetcode.jpeg" >
 
 ## 🤔 문제 설명
 

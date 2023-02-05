@@ -5,7 +5,7 @@ import './style.scss';
 function PostHeader({ post, viewCount }) {
   return (
     <header className="post-header">
-      {post.emoji && <div className="emoji">{post.emoji}</div>}
+      <img className="thumbnail" src={post.thumbnail.childImageSharp.fluid.src} alt="thumbnail" />
       <div className="info">
         <div className="categories">
           {post.categories.map((category) => (
@@ -15,7 +15,6 @@ function PostHeader({ post, viewCount }) {
           ))}
         </div>
       </div>
-
       <h1 className="title">{post.title}</h1>
       <div className="info">
         <div className="author">

@@ -4,7 +4,7 @@ import React from 'react';
 // import PostSearch from '../post-search';
 import './style.scss';
 
-const PageHeader = ({ siteTitle }) => {
+const PageHeader = ({ siteTitle, type, logo }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -28,17 +28,17 @@ const PageHeader = ({ siteTitle }) => {
         <header className="page-header-wrapper">
           <div className="page-header">
             <div className="front-section">
-              <Link className="link" to="/">
-                {siteTitle}
-                <span className="primary">,</span>
+              <Link className="link link-logo" to="/">
+                <img className="logo" src={logo} alt="logo" />
+                <span className="primary">{siteTitle}</span> {type}
               </Link>
             </div>
             <div className="trailing-section">
-              <Link className="link" id="menu" to="/about">
-                about
-              </Link>
               <Link className="link" id="menu" to="/posts">
-                posts
+                포스트
+              </Link>
+              <Link className="introduce" to="/about">
+                소개
               </Link>
               {/* <PostSearch
                 posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}

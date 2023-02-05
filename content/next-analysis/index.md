@@ -3,8 +3,9 @@ emoji: 📝
 title: (Next.js) 오픈소스 간략한 코드 분석
 date: '2022-10-07 15:39:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 요즘 프론트엔드 개발자에게 거의 필수적이라고 할 수가 있는 Next.js에 대하여 오픈소스 코드들을 분석해보면서 어떤 식으로 구현되어 있는지 간략하게 파악해본 글들을 포스팅하도록 하겠습니다.🥰

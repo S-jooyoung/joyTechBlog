@@ -3,8 +3,9 @@ emoji: 👰🏻‍♀️
 title: Gatsby 테마로 모바일 결혼 청첩장 만들기
 date: '2022-05-29 16:30:00'
 author: 키맨
-tags: PROJECT github-pages gatsby
-categories: PROJECT
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 제가 만든 결혼 청첩장을 활용해서 그대로 쓰고 싶어 하거나 활용하여 나만의 청첩장을 만들고 싶은 분들이 계실 텐데요! 이런 분들에게 도움을 드리고자 이 글을 쓰게 되었습니다. 잘 안되는 부분이나 궁금한 점을 댓글로 남겨주시면 확인하고 빠르게 답변드리도록 하겠습니다!😁

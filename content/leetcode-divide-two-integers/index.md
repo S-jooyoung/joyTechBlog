@@ -3,13 +3,12 @@ emoji: 📝
 title: (leetCode)Divide Two Integers - 타입스크립트
 date: '2022-09-18 10:51:00'
 author: 키맨
-tags: ALGORITHM github-pages gatsby
-categories: ALGORITHM
+tags: 알고리즘 github-pages gatsby
+categories: 알고리즘
+thumbnail: '../../assets/algorithm.png'
 ---
 
 > 이번에도 리드 코드의 문제를 들고 왔습니다.😁 간단해 보이지만 시간복잡도와제약조건 등을을 고려해서풀어야 하는는문제였습니다다. 바로문제 풀이로로 이동해 봅시다.
-
-<img alt="leetcode.jpeg" src="./leetcode.jpeg" >
 
 ## 🤔 문제 설명
 

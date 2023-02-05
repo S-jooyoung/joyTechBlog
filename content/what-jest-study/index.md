@@ -3,13 +3,12 @@ emoji: 🛠
 title: (Jest) Jest란 무엇인가?
 date: '2022-07-08 16:30:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > JavaScript, React 등의 테스트 코드를 작성할 때 사용하는 Jest 프레임워크가 어떤 것인지 알아보고 사용법을 알아보자.
-
-<img alt="jest-image-01.png" src="./jest-image-01.png" >
 
 ## Jest란?🧐
 

@@ -3,8 +3,9 @@ emoji: 🔐
 title: 쿠키 vs 세션 vs 토큰 이해하기
 date: '2022-10-26 17:54:00'
 author: 키맨
-tags: STUDY github-pages gatsby
-categories: STUDY
+tags: 개발 github-pages gatsby
+categories: 개발
+thumbnail: './thumbnail.png'
 ---
 
 > 이번에는 개발자라면 많이 들어본 쿠키와 세션 그리고 토큰에 대하여 포스팅해보고자 합니다. 자주 등장하는 애들이지만 잘 알지 못하였기에 이번 기회에 정확한 의미와 활용까지 해보는 시간을 가지도록 하겠습니다.😁

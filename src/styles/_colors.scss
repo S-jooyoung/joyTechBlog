@@ -1,7 +1,9 @@
 // light mode colors
 html {
   --background-color: #ffffff;
-  --highlight-color: rgb(54, 121, 222);
+  --highlight-color: #6c63ff;
+  --highlight-hover-color: #5048f3;
+  --introduce-text-color: #e6e6e6;
   --primary-text-color: #000;
   --secondary-text-color: #7c7b7b;
   --content-text-color: rgb(55, 53, 47);
@@ -30,6 +32,7 @@ html {
 html[data-theme='dark'] {
   --background-color: #232326;
   --primary-text-color: #e6e6e6;
+  --introduce-text-color: #e6e6e6;
   --secondary-text-color: #768390;
   --content-text-color: #e6e6e6;
 

@@ -6,6 +6,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   .post-card {
     display: flex;
@@ -13,36 +15,56 @@
     height: 100%;
     width: 100%;
     max-width: $content-max-width;
-    border: 1px solid var(--post-card-border-color);
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 15px;
     color: var(--primary-text-color);
 
     &:hover {
       .title {
-        text-decoration: underline var(--highlight-color);
-        text-underline-position: under;
-        text-decoration-thickness: 3px;
-        transition-duration: 0.8s;
+        color: var(--highlight-color);
+        transition-duration: 0.5s;
+      }
+
+      .thumbnail {
+        transform: translateY(-8px);
+        transition-duration: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
       }
     }
 
     @include md {
       margin-bottom: 0;
+      flex-direction: row;
+    }
+
+    .thumbnail {
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      margin: 0 0 20px 0;
+      border-radius: 14px;
+      transition: 0.2s ease-in-out;
+
+      @include md {
+        width: 240px;
+        height: 240px;
+        margin-right: 48px;
+      }
     }
 
     .title {
-      font-size: 20px;
+      font-size: 26px;
       font-weight: 700;
       margin-bottom: 12px;
       line-height: 1.4;
+
+      @include md {
+        font-size: 36px;
+      }
     }
 
     .description {
-      font-size: 16px;
+      font-size: 17px;
       margin-bottom: 10px;
-      line-height: 20px;
+      line-height: 1.5;
       color: var(--secondary-text-color);
       overflow: hidden;
       text-overflow: ellipsis;
@@ -54,7 +76,6 @@
 
     .info {
       display: flex;
-      justify-content: space-between;
       margin-top: auto;
       font-size: 14px;
       color: var(--about-link-icon-color);

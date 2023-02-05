@@ -3,13 +3,12 @@ emoji: 🧑🏻‍💻
 title: 8개월간의 1일 1커밋 회고
 date: '2022-06-02 17:00:00'
 author: 키맨
-tags: RETROSPECT github-pages gatsby
-categories: RETROSPECT
+tags: 에세이 github-pages gatsby
+categories: 에세이
+thumbnail: './thumbnail.png'
 ---
 
 > 사실 1일 1커밋을 시작할 당시 1년을 채울 시점에 회고를 해보자고 생각하였지만, 6월 2일인 오늘부터 입사하게 되어 혹시 모를..(못 채울까 봐...?😂 ) 부랴부랴 회고를 해보기로 한다.
-
-![onecommit-01.png](onecommit-01.png)
 
 ## 🤔 왜 1일 1커밋을 시작햇어?
 
