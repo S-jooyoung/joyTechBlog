@@ -2,6 +2,10 @@
   Keyman Log,
 </h1>
 
+## 🔍 미리보기
+
+[Click here](https://s-jooyoung.github.io/)
+
 ## ✨ 기능
 
 - 😛 미모지와 문자 애니메이션를 통한 자기 소개
