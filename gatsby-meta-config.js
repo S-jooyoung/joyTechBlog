@@ -4,15 +4,16 @@ module.exports = {
   logo: `/logo.svg`,
   description: `조이 기술 블로그, 조이 테크`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://s-jooyoung.github.io`, // https://s-jooyoung.github.io
-  siteMap: `https://s-jooyoung.github.io/sitemap-pages.xml`, // https://s-jooyoung.github.io/sitemap-pages.xml
+  siteUrl: `https://joy.pe.kr/`, // https://s-jooyoung.github.io
+  siteMap: `https://joy.pe.kr//sitemap-pages.xml`, // https://s-jooyoung.github.io/sitemap-pages.xml
   ogImage: `/ogImage.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: `S-jooyoung/S-jooyoung.github.io`, // S-jooyoung/S-jooyoung.github.io
     },
   },
-  ga: 'G-J3BX7D8H6K', // Google Analytics Tracking ID
+  ga: 'G-BE92GNG3XF', // Google Analytics Tracking ID
+  client: 'ca-pub-4083591465738564',
   author: {
     name: `신주영`,
     bio: {

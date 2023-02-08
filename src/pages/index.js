@@ -10,7 +10,6 @@ import PostTabs from '../components/post-tabs';
 
 function HomePage({ data }) {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => new Post(node));
-  console.log(posts);
   const { author, language } = data.site.siteMetadata;
   const categories = ['모두', ...getUniqueCategories(posts)];
   const featuredTabIndex = categories.findIndex((category) => category === 'featured');

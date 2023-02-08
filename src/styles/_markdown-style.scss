@@ -105,7 +105,7 @@
 .markdown code,
 .markdown kbd,
 .markdown pre {
-  font-family: monospace, monospace;
+  font-family: $font-family;
   font-size: 1em;
 }
 
@@ -283,7 +283,7 @@
 
 .markdown code,
 .markdown pre {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: $font-family;
   font-size: 12px;
 }
 
@@ -865,7 +865,7 @@
 
 .markdown .commit-tease-sha {
   display: inline-block;
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: $font-family;
   font-size: 90%;
   color: #444d56;
 }
@@ -890,7 +890,7 @@
   min-width: 50px;
   padding-right: 10px;
   padding-left: 10px;
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: $font-family;
   font-size: 12px;
   line-height: 20px;
   color: rgba(27, 31, 35, 0.3);
@@ -922,7 +922,7 @@
 
 .markdown .blob-code-inner {
   overflow: visible;
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-family: $font-family;
   font-size: 12px;
   color: #24292e;
   word-wrap: normal;

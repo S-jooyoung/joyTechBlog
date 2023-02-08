@@ -1,5 +1,6 @@
 @use '../../styles/markdown-style'as *;
-@use 'prismjs/themes/prism-tomorrow'as *;
+@use '../../styles/variables'as *;
+@use 'prismjs/themes/prism-material-light'as *;
 
 .post-content {
   display: flex;
@@ -7,4 +8,14 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
+}
+
+pre.language-typescript {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 27, 55, 0.1);
+}
+
+img.gatsby-resp-image-image {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 27, 55, 0.1);
 }

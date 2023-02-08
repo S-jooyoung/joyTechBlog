@@ -8,7 +8,7 @@ categories: 개발
 thumbnail: './thumbnail.png'
 ---
 
-> 전에 포스팅한 [쿠키 vs 세션 vs 토큰](https://s-jooyoung.github.io/basic-next-jwt-auth/)의 이론을 테스트하고자 JWT를 활용한 인증, 인가 부분을 실습해보겠습니다.😁
+> 전에 포스팅한 [쿠키 vs 세션 vs 토큰](https://joy.pe.kr/basic-next-jwt-auth/)의 이론을 테스트하고자 JWT를 활용한 인증, 인가 부분을 실습해보겠습니다.😁
 
 ## 🤔 JWT(Json Web Token)란?
 

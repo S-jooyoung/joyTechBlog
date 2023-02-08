@@ -10,6 +10,7 @@ function Seo({ description, title }) {
           siteMetadata {
             title
             description
+            client
             author {
               name
             }
@@ -60,7 +61,7 @@ function Seo({ description, title }) {
     >
       <script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4083591465738564"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.siteMetadata.client}`}
         crossorigin="anonymous"
       ></script>
     </Helmet>

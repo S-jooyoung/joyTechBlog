@@ -9,8 +9,6 @@ function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
     return posts.filter((post) => post.categories.includes(tabs[tabIndex]));
   }, [posts, tabs, tabIndex]);
 
-  console.log(tabs);
-
   return (
     <div className="post-tabs-wrapper">
       <div className="post-tabs">
