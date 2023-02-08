@@ -64,6 +64,7 @@ function Seo({ description, title }) {
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.siteMetadata.client}`}
         crossorigin="anonymous"
       ></script>
+      <link href="themes/prism-ghcolors.css" rel="stylesheet" />
     </Helmet>
   );
 }
