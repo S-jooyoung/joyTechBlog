@@ -2,7 +2,7 @@
 emoji: 🛠
 title: (Jest) Jest란 무엇인가?
 date: '2022-07-08 16:30:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './thumbnail.png'

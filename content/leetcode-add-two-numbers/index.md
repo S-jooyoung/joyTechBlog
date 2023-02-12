@@ -2,7 +2,7 @@
 emoji: 📝
 title: (leetCode)Add Two Numbers - 타입스크립트
 date: '2022-09-16 23:59:00'
-author: 키맨
+author: 조이
 tags: 알고리즘 github-pages gatsby
 categories: 알고리즘
 thumbnail: '../../assets/algorithm.png'

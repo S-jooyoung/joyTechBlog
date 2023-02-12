@@ -2,7 +2,7 @@
 emoji: 👰🏻‍♀️
 title: 모바일 청첩장 만들기 회고
 date: '2022-05-26 17:00:00'
-author: 키맨
+author: 조이
 tags: 에세이 github-pages gatsby
 categories: 에세이
 thumbnail: './thumbnail.png'

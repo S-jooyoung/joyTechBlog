@@ -2,7 +2,7 @@
 emoji: 🧑🏻‍💻
 title: 나만의 기술 블로그 만들기
 date: '2022-05-11 19:00:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './thumbnail.png'

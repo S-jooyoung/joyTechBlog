@@ -2,7 +2,7 @@
 emoji: 👰🏻‍♀️
 title: Gatsby 테마로 모바일 결혼 청첩장 만들기
 date: '2022-05-29 16:30:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './thumbnail.png'

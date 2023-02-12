@@ -2,7 +2,7 @@
 emoji: 🐳
 title: (docker) postgres 및 app Docker Compose 연결하기
 date: '2022-09-20 11:00:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './thumbnail.png'

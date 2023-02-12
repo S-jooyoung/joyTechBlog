@@ -2,7 +2,7 @@
 emoji: 📝
 title: (Next.js) 오픈소스 간략한 코드 분석
 date: '2022-10-07 15:39:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './thumbnail.png'

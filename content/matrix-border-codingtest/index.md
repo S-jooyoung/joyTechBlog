@@ -2,7 +2,7 @@
 emoji: 📝
 title: (프로그래머스 Lv.2) 행렬 테두리 회전하기 - 자바스크립트
 date: '2022-06-25 23:30:00'
-author: 키맨
+author: 조이
 tags: 알고리즘 github-pages gatsby
 categories: 알고리즘
 thumbnail: '../../assets/algorithm.png'

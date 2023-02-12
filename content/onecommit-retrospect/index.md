@@ -2,7 +2,7 @@
 emoji: 🧑🏻‍💻
 title: 8개월간의 1일 1커밋 회고
 date: '2022-06-02 17:00:00'
-author: 키맨
+author: 조이
 tags: 에세이 github-pages gatsby
 categories: 에세이
 thumbnail: './thumbnail.png'

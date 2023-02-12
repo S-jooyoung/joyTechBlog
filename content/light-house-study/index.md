@@ -2,7 +2,7 @@
 emoji: 📈
 title: lighthouse란 무엇인가?
 date: '2022-06-22 23:30:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './light_house_01.png'

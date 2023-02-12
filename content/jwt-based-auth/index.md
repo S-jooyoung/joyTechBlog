@@ -2,7 +2,7 @@
 emoji: 🪙
 title: (Next.js) JWT를 활용한 인증 구현
 date: '2022-10-26 23:50:00'
-author: 키맨
+author: 조이
 tags: 개발 github-pages gatsby
 categories: 개발
 thumbnail: './thumbnail.png'

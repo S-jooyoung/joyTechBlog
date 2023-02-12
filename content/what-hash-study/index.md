@@ -2,7 +2,7 @@
 emoji: 📚
 title: (알고리즘) 해시(Hash) 알고리즘
 date: '2022-07-11 23:30:00'
-author: 키맨
+author: 조이
 tags: 알고리즘 github-pages gatsby
 categories: 알고리즘
 thumbnail: '../../assets/algorithm.png'

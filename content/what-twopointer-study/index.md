@@ -2,7 +2,7 @@
 emoji: 📚
 title: (알고리즘) 투포인터 + 슬라이딩 윈도우
 date: '2022-07-14 23:13:00'
-author: 키맨
+author: 조이
 tags: 알고리즘 github-pages gatsby
 categories: 알고리즘
 thumbnail: '../../assets/algorithm.png'

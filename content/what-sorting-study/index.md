@@ -2,7 +2,7 @@
 emoji: 📚
 title: (알고리즘) 정렬 알고리즘 - JavaScript
 date: '2022-07-10 23:42:00'
-author: 키맨
+author: 조이
 tags: 알고리즘 github-pages gatsby
 categories: 알고리즘
 thumbnail: '../../assets/algorithm.png'
