@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: metaConfig.as,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
@@ -48,21 +54,7 @@ module.exports = {
         icon: `static/favicon.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: 'JetBrains Mono',
-            weights: ['100', '400'],
-          },
-          {
-            family: 'Roboto Mono',
-            weights: ['100..400'],
-          },
-        ],
-      },
-    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {

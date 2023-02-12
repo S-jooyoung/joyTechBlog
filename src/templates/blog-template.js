@@ -6,7 +6,6 @@ import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
 import PostContent from '../components/post-content';
-import Utterances from '../components/utterances';
 
 function BlogTemplate({ data }) {
   const [viewCount, setViewCount] = useState(null);
@@ -14,8 +13,7 @@ function BlogTemplate({ data }) {
   const curPost = new Post(data.cur);
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
-  const { siteUrl, comments } = data.site?.siteMetadata;
-  const utterancesRepo = comments?.utterances?.repo;
+  const { siteUrl } = data.site?.siteMetadata;
 
   useEffect(() => {
     if (!siteUrl) return;
@@ -38,7 +36,6 @@ function BlogTemplate({ data }) {
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
-      {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
     </Layout>
   );
 }
@@ -117,11 +114,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         siteUrl
-        comments {
-          utterances {
-            repo
-          }
-        }
       }
     }
   }
