@@ -288,14 +288,15 @@
 }
 
 .markdown code.language-text {
-  border-radius: 3px;
+  border: 1px solid rgba(0, 27, 55, 0.1);
+  border-radius: 5px;
   font-size: 85%;
   padding: 0.2em 0.4em;
 }
 
 .markdown :not(pre) > code.language-text {
-  background: rgba(135, 131, 120, 0.15);
-  color: #eb5757;
+  background: #f6f8fa;
+  color: var(--highlight-color);
   overflow-wrap: break-word;
 }
 
