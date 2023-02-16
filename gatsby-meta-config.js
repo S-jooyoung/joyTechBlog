@@ -39,7 +39,7 @@ module.exports = {
       {
         date: '2022.11 ~ ',
         activity: 'Staybility Frontend Developer',
-        link: 'https://www.staybility.co.kr/',
+        link: 'https://www.millionground.com/',
       },
       {
         date: '2022.07 ~ 2022.09',
