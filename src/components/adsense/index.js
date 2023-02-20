@@ -6,7 +6,7 @@ const Adsense = ({ client, slot }) => {
     <AdSense.Google
       client={client}
       slot={slot}
-      style={{ display: 'block', height: '200px' }}
+      style={{ display: 'block', height: '150px' }}
       format="auto"
       responsive="true"
     />
