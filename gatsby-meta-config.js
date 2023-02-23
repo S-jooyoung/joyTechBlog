@@ -9,7 +9,7 @@ module.exports = {
   ogImage: `/ogImage.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: 'S-jooyoung/joyTech-comment',
+      repo: 'S-jooyoung/joyTech-comments',
     },
   },
   ga: 'G-BE92GNG3XF', // Google Analytics Tracking ID
