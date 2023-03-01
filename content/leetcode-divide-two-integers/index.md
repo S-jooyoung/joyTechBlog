@@ -87,7 +87,7 @@ if (__counter * __sign >= Math.pow(2, 31) - 1) return Math.pow(2, 31) - 1;
 if (__counter * __sign <= Math.pow(-2, 31)) return Math.pow(-2, 31);
 ```
 
-2. 제약조건에 `Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−2^31, 2^31 − 1]. For this problem, if the quotient is strictly greater than 231 - 1, then return 231 - 1, and if the quotient is strictly less than -231, then return -231.` 라고 선언되어 있기 때문에 값을 구하기 전에 해당 요구사항을 먼저 구현하였다.
+2. 제약조건에 맞추어 값을 구하기 전에 해당 요구사항을 먼저 구현하였다.
 
 ```typescript
 if (_divisor === 1) {
