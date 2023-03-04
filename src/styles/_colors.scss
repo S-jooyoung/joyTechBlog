@@ -1,12 +1,13 @@
 // light mode colors
 html {
   --background-color: #ffffff;
+  --header-bottom-color: rgba(70, 129, 193, 0.1);
   --highlight-color: #6c63ff;
   --highlight-hover-color: #5048f3;
   --introduce-text-color: #e6e6e6;
   --primary-text-color: #000;
   --secondary-text-color: #4e5968;
-  --content-text-color: rgb(55, 53, 47);
+  --content-text-color: #586069;
 
   --button-background-color: #f3f3f4;
   --button-text-color: #363f47;
@@ -33,13 +34,14 @@ html[data-theme='dark'] {
   --background-color: #232326;
   --primary-text-color: #e6e6e6;
   --introduce-text-color: #e6e6e6;
-  --secondary-text-color: #768390;
+  --secondary-text-color: #e6e6e6;
   --content-text-color: #e6e6e6;
+  --header-bottom-color: #656565;
 
   --button-background-color: #444c56;
-  --button-text-color: #363f47;
+  --button-text-color: #e6e6e6;
 
-  --tab-text-color: #768390;
+  --tab-text-color: #e6e6e6;
   --tab-hover-text-color: #acbac7;
   --tab-selected-background-color: #373e47;
 
