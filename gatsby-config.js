@@ -114,6 +114,38 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      query: `
+            {
+                allJoyPost {
+                    edges {
+                        node {
+                            id
+                            slug
+                            updated_at
+                            feature_image
+                        }
+                    }
+                }
+            }`,
+      mapping: {
+        // Each data type can be mapped to a predefined sitemap
+        // Routes can be grouped in one of: posts, tags, authors, pages, or a custom name
+        // The default sitemap - if none is passed - will be pages
+        allJoyPost: {
+          sitemap: `posts`,
+          // Add a query level prefix to slugs, Don't get confused with global path prefix from Gatsby
+          // This will add a prefix to this particular sitemap only
+          prefix: 'your-prefix/',
+        },
+      },
+      options: {
+        createLinkInHead: true, // optional: create a link in the `<head>` of your site
+        addUncaughtPages: true, // optional: will fill up pages that are not caught by queries and mapping and list them under `sitemap-pages.xml`
+      },
+    },
+
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-theme-material-ui`,
     `gatsby-transformer-sharp`,

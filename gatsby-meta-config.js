@@ -4,7 +4,7 @@ module.exports = {
   logo: `/logo.svg`,
   description: `웹 프론트엔드 개발과 관련한 포스트를 작성하고 있습니다.`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://joy.pe.kr/`, // https://s-jooyoung.github.io
+  siteUrl: `https://joy.pe.kr`, // https://s-jooyoung.github.io
   siteMap: `https://joy.pe.kr//sitemap-pages.xml`, // https://s-jooyoung.github.io/sitemap-pages.xml
   ogImage: `/ogImage.png`, // Path to your in the 'static' folder
   comments: {
