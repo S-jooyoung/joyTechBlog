@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import Img from 'gatsby-image';
 
 const Image = ({ src, ...rest }) => {

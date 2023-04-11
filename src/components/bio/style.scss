@@ -64,15 +64,13 @@
       }
 
       .description {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
         line-height: 1.5;
         color: var(--secondary-text-color);
-        overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
         /* number of lines to show */
         -webkit-box-orient: vertical;
       }
