@@ -1,11 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import Img from 'gatsby-image';
 import './style.scss';
 
 function PostHeader({ post, viewCount }) {
   return (
     <header className="post-header">
-      <img className="thumbnail" src={post.thumbnail.childImageSharp.fluid.src} alt="thumbnail" />
+      <Img className="thumbnail" fluid={post.thumbnail.childImageSharp.fluid} alt="thumbnail" />
       <div className="info">
         <div className="categories">
           {post.categories.map((category) => (

@@ -28,6 +28,11 @@
     align-items: center;
   }
 
+  .myPicture {
+    border-radius: 14px;
+    min-width: 150px;
+  }
+
   .introduction {
     display: flex;
     flex-direction: column;

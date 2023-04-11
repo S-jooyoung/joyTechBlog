@@ -10,7 +10,7 @@ function Bio({ author, language = 'ko' }) {
   return (
     <div className="bio">
       <div className="thumbnail-wrapper">
-        <Image style={{ borderRadius: '14px' }} src={bio.thumbnail} alt="thumbnail" />
+        <Image className="myPicture" src={bio.thumbnail} alt="thumbnail" />
       </div>
       {language === 'ko' ? (
         <div className="introduction korean">
