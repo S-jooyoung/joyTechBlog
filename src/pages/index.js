@@ -4,7 +4,6 @@ import Layout from '../layout';
 import Seo from '../components/seo';
 import Bio from '../components/bio';
 import Post from '../models/post';
-
 import { getUniqueCategories } from '../utils/helpers';
 import PostTabs from '../components/post-tabs';
 
@@ -46,9 +45,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 700) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
               }
             }
           }

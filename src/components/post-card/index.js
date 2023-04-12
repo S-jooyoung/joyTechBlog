@@ -1,17 +1,16 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import './style.scss';
 
 function PostCard({ post }) {
   const { id, slug, title, excerpt, date, categories, thumbnail } = post;
-
-  const thumbnailSrc = thumbnail.childImageSharp.fluid;
+  const thumbnailSrc = getImage(thumbnail);
 
   return (
     <div className="post-card-wrapper">
       <Link className="post-card" key={id} to={slug}>
-        <Img className="thumbnail" fluid={thumbnailSrc} alt="thumbnail" />
+        <GatsbyImage className="thumbnail" image={thumbnailSrc} alt="thumbnail" />
         <div>
           <div className="title">{title}</div>
           <p className="description" dangerouslySetInnerHTML={{ __html: excerpt }} />

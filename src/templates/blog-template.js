@@ -59,9 +59,7 @@ export const pageQuery = graphql`
         emoji
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
@@ -81,9 +79,7 @@ export const pageQuery = graphql`
         emoji
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
@@ -103,9 +99,7 @@ export const pageQuery = graphql`
         emoji
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 700) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

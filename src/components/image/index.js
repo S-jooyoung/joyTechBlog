@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Image = ({ src, ...rest }) => {
   const data = useStaticQuery(graphql`
@@ -12,9 +12,7 @@ const Image = ({ src, ...rest }) => {
             extension
             publicURL
             childImageSharp {
-              fluid(maxWidth: 700) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 300, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
             }
           }
         }
@@ -30,12 +28,13 @@ const Image = ({ src, ...rest }) => {
   if (!match) return null;
 
   const { node: { childImageSharp, publicURL, extension } = {} } = match;
+  const imgSrc = getImage(childImageSharp);
 
   if (extension === 'svg' || !childImageSharp) {
     return <img src={publicURL} alt={publicURL} {...rest} />;
   }
 
-  return <Img fluid={childImageSharp.fluid} alt={publicURL} {...rest} />;
+  return <GatsbyImage image={imgSrc} alt={publicURL} {...rest} />;
 };
 
 export default Image;

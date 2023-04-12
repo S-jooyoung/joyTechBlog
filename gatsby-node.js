@@ -64,7 +64,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             id
-            excerpt(pruneLength: 500, truncate: true)
+            excerpt(pruneLength: 80, truncate: true)
             fields {
               slug
             }
@@ -74,9 +74,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               date(formatString: "MMMM DD, YYYY")
               thumbnail {
                 childImageSharp {
-                  fluid(maxWidth: 700) {
-                    src
-                  }
+                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
               }
             }
