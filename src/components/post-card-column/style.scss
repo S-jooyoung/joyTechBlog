@@ -3,7 +3,6 @@
   justify-content: center;
   width: 100%;
 
-
   .post-card-column {
     display: flex;
     flex-direction: column;
@@ -15,11 +14,53 @@
     }
 
     .more-post-card-button {
+      width: 120px;
       height: 40px;
       font-weight: 500;
       font-size: 15px;
-      background-color: var(--button-background-color);
-      color: var(--tab-hover-text-color);
+      background-color: var(--highlight-color);
+      color: var(--introduce-text-color);
+
+      animation: jittery 4s infinite;
+
+      &:hover {
+        background-color: var(--highlight-hover-color);
+      }
     }
+  }
+}
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(0.9);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1.15) rotate(0);
   }
 }
