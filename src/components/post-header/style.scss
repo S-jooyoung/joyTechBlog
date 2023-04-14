@@ -14,6 +14,7 @@
   word-break: keep-all;
 
   .thumbnail {
+    isolation: isolate;
     width: 100%;
     margin-top: 36px;
     border-radius: 12px;

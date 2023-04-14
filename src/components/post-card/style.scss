@@ -17,6 +17,11 @@
     max-width: $content-max-width;
     color: var(--primary-text-color);
 
+    @include md {
+      margin-bottom: 0;
+      flex-direction: row;
+    }
+
     &:hover {
       .title {
         color: var(--highlight-color);
@@ -30,17 +35,11 @@
       }
     }
 
-    @include md {
-      margin-bottom: 0;
-      flex-direction: row;
-    }
-
     .thumbnail {
       width: 100%;
-      // max-height: 240px;
-      // object-fit: cover;
       margin: 0 0 20px 0;
       border-radius: 14px;
+      isolation: isolate;
       transition: 0.2s ease-in-out;
 
       @include md {

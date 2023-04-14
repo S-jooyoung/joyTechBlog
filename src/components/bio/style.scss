@@ -29,6 +29,7 @@
   }
 
   .myPicture {
+    isolation: isolate;
     width: 150px;
     border-radius: 14px;
   }
