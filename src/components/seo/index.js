@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-function Seo({ description, title }) {
+function Seo({ description, title, thumbnail }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +21,8 @@ function Seo({ description, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaThumbnail = thumbnail || site.siteMetadata.ogImage;
+
   return (
     <Helmet
       htmlAttributes={{ lang: 'en' }}
@@ -49,7 +51,7 @@ function Seo({ description, title }) {
         },
         {
           property: 'og:image',
-          content: site.siteMetadata.ogImage,
+          content: metaThumbnail,
         },
 
         {

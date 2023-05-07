@@ -34,7 +34,11 @@ function BlogTemplate({ data }) {
 
   return (
     <Layout>
-      <Seo title={curPost?.title} description={curPost?.excerpt} />
+      <Seo
+        title={curPost?.title}
+        description={curPost?.excerpt}
+        thumbnail={curPost?.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
+      />
       <PostHeader post={curPost} viewCount={viewCount} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
