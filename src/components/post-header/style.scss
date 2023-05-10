@@ -5,12 +5,11 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-
   padding-bottom: 10px;
   border-bottom: 1px solid var(--post-card-border-color);
-
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
   word-break: keep-all;
 
   .thumbnail {

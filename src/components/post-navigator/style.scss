@@ -4,9 +4,11 @@
 .post-navigator {
   display: grid;
   width: 100%;
+  max-width: 652px;
   grid-template-columns: 49.3% 49.3%;
   column-gap: 1.4%;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   border-top: 1px solid var(--post-card-border-color);
 
   .post-card {
@@ -14,19 +16,13 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    border: 1px solid var(--link-text-color);
     border-radius: 6px;
-    padding: 15px;
+    padding-top: 15px;
+    padding: 5px;
     color: var(--primary-text-color);
 
     cursor: pointer;
     transition: transform 0.2s;
-
-    &:hover {
-      .title {
-        text-decoration: underline;
-      }
-    }
 
     &.prev {
       margin-right: auto;
@@ -36,18 +32,37 @@
       margin-left: auto;
     }
 
+    .thumbnail {
+      border-radius: 14px;
+      isolation: isolate;
+      transition: 0.2s ease-in-out;
+    }
+
     .direction {
       font-size: 14px;
       font-weight: 500;
       color: grey;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      margin-left: 3px;
     }
 
     .title {
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 600;
-      margin-bottom: 7px;
+      margin-top: 7px;
+      margin-left: 7px;
       line-height: 1.4;
+
+      @include md {
+        font-size: 16px;
+      }
+    }
+
+    &:hover {
+      .title {
+        color: var(--highlight-color);
+        transition-duration: 0.5s;
+      }
     }
   }
 }
