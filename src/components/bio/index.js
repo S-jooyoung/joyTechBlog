@@ -6,7 +6,6 @@ import './style.scss';
 function Bio({ author, language = 'ko' }) {
   if (!author) return null;
   const { bio, social, name } = author;
-
   return (
     <div className="bio">
       <div className="thumbnail-wrapper">
