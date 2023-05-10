@@ -3,7 +3,7 @@ import React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import './style.scss';
 
-function PostHeader({ post, viewCount }) {
+function PostHeader({ post }) {
   const thumbnailSrc = getImage(post.thumbnail);
   return (
     <header className="post-header">
@@ -23,7 +23,6 @@ function PostHeader({ post, viewCount }) {
           posted by <strong>{post.author}</strong>,
         </div>{' '}
         {post.date}
-        {viewCount && ` · ${viewCount} views`}
       </div>
     </header>
   );

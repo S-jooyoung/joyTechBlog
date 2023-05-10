@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layout';
 import Seo from '../components/seo';
@@ -9,28 +9,11 @@ import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
 
 function BlogTemplate({ data }) {
-  const [viewCount, setViewCount] = useState(null);
-
   const curPost = new Post(data.cur);
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
-  const { siteUrl, comments } = data.site?.siteMetadata;
+  const { comments } = data.site?.siteMetadata;
   const utterancesRepo = comments?.utterances?.repo;
-
-  useEffect(() => {
-    if (!siteUrl) return;
-    const namespace = siteUrl.replace(/(^\w+:|^)\/\//, '');
-    const key = curPost.slug.replace(/\//g, '');
-
-    fetch(
-      `https://api.countapi.xyz/${
-        process.env.NODE_ENV === 'development' ? 'get' : 'hit'
-      }/${namespace}/${key}`,
-    ).then(async (result) => {
-      const data = await result.json();
-      setViewCount(data.value);
-    });
-  }, [siteUrl, curPost.slug]);
 
   return (
     <Layout>
@@ -39,7 +22,7 @@ function BlogTemplate({ data }) {
         description={curPost?.excerpt}
         thumbnail={curPost?.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
       />
-      <PostHeader post={curPost} viewCount={viewCount} />
+      <PostHeader post={curPost} />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
