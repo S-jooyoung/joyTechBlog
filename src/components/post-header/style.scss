@@ -13,6 +13,7 @@
   word-break: keep-all;
 
   .thumbnail {
+    isolation: isolate;
     width: 100%;
     margin-top: 36px;
     border-radius: 12px;
@@ -42,6 +43,7 @@
   }
 
   .profileImage {
+    isolation: isolate;
     width: 55px;
     height: 55px;
     border-radius: 50%;
