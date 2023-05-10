@@ -71,7 +71,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               categories
               title
-              date(formatString: "MMMM DD, YYYY")
+              date(formatString: "YYYY.MM.DD")
               thumbnail {
                 childImageSharp {
                   gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

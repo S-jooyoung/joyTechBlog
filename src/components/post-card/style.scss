@@ -83,7 +83,12 @@
         display: flex;
 
         .category {
-          margin-left: 4px;
+          margin-left: 5px;
+          font-weight: 600;
+          color: var(--highlight-color);
+          &:hover {
+            color: var(--highlight-hover-color);
+          }
         }
       }
     }

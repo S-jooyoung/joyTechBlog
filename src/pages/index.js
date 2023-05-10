@@ -42,7 +42,7 @@ export const pageQuery = graphql`
           frontmatter {
             categories
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY.MM.DD")
             thumbnail {
               childImageSharp {
                 gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

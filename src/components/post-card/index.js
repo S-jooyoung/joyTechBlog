@@ -15,7 +15,7 @@ function PostCard({ post }) {
           <div className="title">{title}</div>
           <p className="description" dangerouslySetInnerHTML={{ __html: excerpt }} />
           <div className="info">
-            <div className="date">{date},</div>
+            <div className="date">{date}</div>
             <div className="categories">
               {categories.map((category) => (
                 <div className="category" key={category}>
