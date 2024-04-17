@@ -7,23 +7,21 @@ import './style.scss';
 const PageHeader = ({ siteTitle, type, logo }) => {
   return (
     <StaticQuery
-      query={graphql`
-        query SearchIndexQuery {
-          allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
-            edges {
-              node {
-                frontmatter {
-                  title
-                  categories
-                }
-                fields {
-                  slug
-                }
-              }
-            }
-          }
+      query={graphql`query SearchIndexQuery {
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          categories
         }
-      `}
+        fields {
+          slug
+        }
+      }
+    }
+  }
+}`}
       render={(data) => (
         <header className="page-header-wrapper">
           <div className="page-header">
