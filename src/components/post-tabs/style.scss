@@ -1,5 +1,5 @@
-@use '../../styles/mixins'as *;
-@use '../../styles/variables'as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
 
 .post-tabs-wrapper {
   display: flex;
@@ -13,9 +13,10 @@
     display: flex;
     justify-content: center;
     height: 40px;
+    padding: 0.375rem 0px;
     width: 100%;
     max-width: $content-max-width + 40px;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 
     .mui-tabs {
       .MuiTab-root {

@@ -10,23 +10,25 @@ function PostCardColumn({ posts, showMoreButton, moreUrl }) {
   }, [moreUrl]);
 
   return (
-    <div className="post-card-column-wrapper">
-      <div className="post-card-column">
-        {posts.map((post, index) => (
-          <PostCard key={index} post={post} />
-        ))}
+    <>
+      <div className="post-tabs-latest">
+        <p>Latest</p>
+      </div>
+      <div className="post-card-column-wrapper">
+        <div className="post-card-column">
+          {posts.map((post, index) => (
+            <PostCard key={index} post={post} />
+          ))}
+        </div>
+      </div>
+      <div className="post-card-column-more">
         {showMoreButton && (
-          <Button
-            className="more-post-card-button"
-            onClick={onMoreButtonClick}
-            variant="contained"
-            disableElevation
-          >
-            더 보기
+          <Button variant="outlined" onClick={onMoreButtonClick}>
+            더보기
           </Button>
         )}
       </div>
-    </div>
+    </>
   );
 }
 
