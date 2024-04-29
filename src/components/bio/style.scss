@@ -1,4 +1,4 @@
-@use '../../styles/mixins'as *;
+@use '../../styles/mixins' as *;
 
 @keyframes blinking-cursor {
   0% {
@@ -21,7 +21,7 @@
   padding: 3rem 0rem;
   margin-bottom: 40px;
   color: var(--primary-text-color);
-  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+  border-bottom: 1px solid var(--header-bottom-color);
 
   @include md {
     flex-direction: row;

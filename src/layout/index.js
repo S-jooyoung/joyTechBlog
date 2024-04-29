@@ -27,6 +27,9 @@ const Layout = ({ children }) => {
 
   return (
     <div className="page-wrapper">
+      <div className="page-wrapper-point">
+        <div className="page-wrapper-point-inner"></div>
+      </div>
       <PageHeader siteTitle={title || `Title`} type={type || `Type`} logo={logo || `Logo`} />
       <main className="page-content">{children}</main>
       <PageFooter

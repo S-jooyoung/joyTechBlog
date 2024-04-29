@@ -32,44 +32,46 @@ function HomePage({ data }) {
 
 export default HomePage;
 
-export const pageQuery = graphql`{
-  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-    edges {
-      node {
-        id
-        excerpt(pruneLength: 80, truncate: true)
-        frontmatter {
-          categories
-          title
-          date(formatString: "YYYY.MM.DD")
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 80, truncate: true)
+          frontmatter {
+            categories
+            title
+            date(formatString: "YYYY.MM.DD")
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+              }
             }
           }
+          fields {
+            slug
+          }
         }
-        fields {
-          slug
+      }
+    }
+    site {
+      siteMetadata {
+        language
+        author {
+          name
+          bio {
+            role
+            description
+            thumbnail
+          }
+          social {
+            github
+            linkedIn
+            email
+          }
         }
       }
     }
   }
-  site {
-    siteMetadata {
-      language
-      author {
-        name
-        bio {
-          role
-          description
-          thumbnail
-        }
-        social {
-          github
-          linkedIn
-          email
-        }
-      }
-    }
-  }
-}`;
+`;
