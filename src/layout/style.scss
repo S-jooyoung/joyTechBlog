@@ -46,23 +46,22 @@ a {
 
   .page-wrapper-point {
     position: absolute;
-    right: -30%;
-    top: -10%;
+    right: 0px;
+    top: 0px;
     z-index: -20;
+    overflow: hidden;
+
     .page-wrapper-point-inner {
       position: relative;
       width: 600px;
       height: 600px;
       border-radius: 50%;
       filter: blur(100px);
-      transform: translateX(66.666%);
-      transform: translateY(-66.666%);
+      transform: translateX(66.6%) translateY(-66.666%);
       opacity: 0.5;
       background-color: var(--highlight-color);
-      --tw-gradient-to: transparent var(--tw-gradient-to-position);
-      @include lg {
-        transform: translateX(50%);
-        transform: translateY(-50%);
+      @include md {
+        transform: translateX(60%) translateY(-60%);
       }
     }
   }

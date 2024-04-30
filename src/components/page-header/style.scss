@@ -75,6 +75,9 @@
     }
 
     .trailing-section {
+      display: flex;
+      align-items: center;
+
       #menu {
         position: relative;
       }
