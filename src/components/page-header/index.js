@@ -54,7 +54,7 @@ const PageHeader = ({ siteTitle, type, logo }) => {
               </Link>
             </div>
             <div className="trailing-section">
-              <div className='search'>
+              <div className="search">
                 <PostSearch
                   posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
                 />
