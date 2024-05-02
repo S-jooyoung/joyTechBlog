@@ -1,4 +1,4 @@
-@use './variables'as *;
+@use './variables' as *;
 
 .markdown .octicon {
   display: inline-block;
@@ -190,7 +190,12 @@
 .markdown kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font:
+    11px SFMono-Regular,
+    Consolas,
+    Liberation Mono,
+    Menlo,
+    monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -616,7 +621,12 @@
 .markdown kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font:
+    11px SFMono-Regular,
+    Consolas,
+    Liberation Mono,
+    Menlo,
+    monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;

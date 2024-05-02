@@ -18,15 +18,17 @@ function BlogTemplate({ data }) {
 
   return (
     <Layout>
-      <Seo
-        title={curPost?.title}
-        description={curPost?.excerpt}
-        thumbnail={curPost?.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
-      />
-      <PostHeader post={curPost} profileImage={profileImage} />
-      <PostContent html={curPost.html} />
-      <PostNavigator prevPost={prevPost} nextPost={nextPost} />
-      {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
+      <div className="blog-template-wrapper">
+        <Seo
+          title={curPost?.title}
+          description={curPost?.excerpt}
+          thumbnail={curPost?.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
+        />
+        <PostHeader post={curPost} profileImage={profileImage} />
+        <PostContent html={curPost.html} />
+        <PostNavigator prevPost={prevPost} nextPost={nextPost} />
+        {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
+      </div>
     </Layout>
   );
 }
