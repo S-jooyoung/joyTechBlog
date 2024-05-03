@@ -5,10 +5,10 @@ html {
   --header-bottom-color: rgba(235, 234, 234, 0.837);
   --highlight-color: #6c63ff;
   --highlight-hover-color: #5048f3;
-  --introduce-text-color: #e6e6e6;
-  --primary-text-color: #000;
-  --secondary-text-color: #4e5968;
-  --content-text-color: #586069;
+  --introduce-text-color: #cbd5e1;
+  --primary-text-color: #0f172a;
+  --secondary-text-color: #0f172a;
+  --content-text-color: #334151;
 
   --button-background-color: #f3f3f4;
   --button-text-color: #363f47;
@@ -34,21 +34,21 @@ html {
 html[data-theme='dark'] {
   --background-color: #232326;
   --background-transparent-color: #2323267a;
-  --primary-text-color: #e6e6e6;
-  --introduce-text-color: #e6e6e6;
-  --secondary-text-color: #e6e6e6;
-  --content-text-color: #e6e6e6;
+  --primary-text-color: #e2e8f0;
+  --introduce-text-color: #e2e8f0;
+  --secondary-text-color: #e2e8f0;
+  --content-text-color: #cbd5e1;
   --header-bottom-color: rgba(151, 151, 151, 0.38);
 
-  --button-background-color: #444c56;
-  --button-text-color: #e6e6e6;
+  --button-background-color: #353535;
+  --button-text-color: #cbd5e1;
 
-  --tab-text-color: #e6e6e6;
+  --tab-text-color: #cbd5e1;
   --tab-hover-text-color: #acbac7;
-  --tab-selected-background-color: #373e47;
+  --tab-selected-background-color: #35353;
 
   --chip-background-color: #323a42;
-  --bio-link-icon-color: #e6e6e6;
+  --bio-link-icon-color: #cbd5e1;
   --about-link-icon-color: #a8a8a8;
 
   --link-text-color: #90b0ec;
