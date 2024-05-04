@@ -1033,10 +1033,6 @@
 }
 
 .markdown .table-of-contents {
-  @media (max-width: 1300px) {
-    display: none;
-  }
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
