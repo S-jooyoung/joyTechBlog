@@ -5,7 +5,7 @@
   display: none;
   align-items: center;
   width: 250px;
-  margin-right: 12px;
+  margin-right: 16px;
 
   @include md {
     display: flex;
@@ -31,14 +31,35 @@
     font-weight: 500;
     padding-bottom: 2px !important;
     color: var(--primary-text-color) !important;
+    :hover {
+      border-bottom-color: var(--primary-text-color) !important;
+      border-bottom: 1px;
+    }
   }
 
-  .MuiInput-underline:before {
-    border-bottom-color: var(--primary-text-color);
-    border-bottom-width: 1px;
+  .MuiInputBase-root {
+    cursor: pointer;
+
+    &::before {
+      border-bottom: none !important;
+    }
   }
 
   .MuiInput-underline:after {
     border-bottom-color: var(--primary-text-color);
   }
+}
+
+/* scrollBar CSS */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

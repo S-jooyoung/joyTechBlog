@@ -2,7 +2,7 @@
 html {
   --background-color: #ffffff;
   --background-transparent-color: #ffffff36;
-  --header-bottom-color: rgba(235, 234, 234, 0.837);
+  --header-bottom-color: rgba(235, 234, 234, 0.437);
   --highlight-color: #6c63ff;
   --highlight-hover-color: #5048f3;
   --introduce-text-color: #cbd5e1;
@@ -38,7 +38,7 @@ html[data-theme='dark'] {
   --introduce-text-color: #e2e8f0;
   --secondary-text-color: #e2e8f0;
   --content-text-color: #cbd5e1;
-  --header-bottom-color: rgba(151, 151, 151, 0.38);
+  --header-bottom-color: rgb(57, 57, 57);
 
   --button-background-color: #353535;
   --button-text-color: #cbd5e1;

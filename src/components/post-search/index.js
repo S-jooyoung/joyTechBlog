@@ -7,8 +7,9 @@ import './style.scss';
 const CustomPaper = (props) => (
   <Paper
     sx={{
-      fontSize: '16px',
       scrollbarWidth: '5px',
+      borderRadius: '0px 0px 5px 5px',
+      boxShadow: 'none',
     }}
     {...props}
   />
