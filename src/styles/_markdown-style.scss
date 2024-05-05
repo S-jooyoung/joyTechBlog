@@ -814,10 +814,6 @@
   border-top: 1px solid var(--markdown-table-border-color);
 }
 
-.markdown table tr:nth-child(2n) {
-  background-color: var(--markdown-table-even-cell-background-color);
-}
-
 .markdown img {
   display: block;
   margin: 0px auto;
@@ -1063,14 +1059,15 @@
   }
 }
 
-// added for image resizing
 .markdown .gatsby-resp-image-wrapper {
   display: flex !important;
   justify-content: center !important;
   width: 100% !important;
+  min-width: 100%;
   max-height: $content-image-max-height !important;
 
   img {
+    min-width: 100%;
     max-width: 100% !important;
     max-height: $content-image-max-height !important;
     width: auto !important;
