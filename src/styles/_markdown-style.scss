@@ -261,7 +261,6 @@
 }
 
 .markdown p {
-  margin-top: 0;
   margin-bottom: 10px;
   color: var(--content-text-color);
 }
@@ -676,7 +675,7 @@
 }
 
 .markdown p {
-  margin: 2.4em 0;
+  margin: 1.625em 0 1.625em 0;
 }
 
 .markdown hr {
@@ -812,6 +811,11 @@
 
 .markdown table tr {
   border-top: 1px solid var(--markdown-table-border-color);
+}
+
+.markdown figcaption {
+  font-size: 14px;
+  margin-bottom: 1.325rem;
 }
 
 .markdown img {

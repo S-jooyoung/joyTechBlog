@@ -1,4 +1,4 @@
-@use '../../styles/mixins'as *;
+@use '../../styles/mixins' as *;
 
 .timestamp-section {
   display: flex;
@@ -52,7 +52,7 @@
         margin-right: 5px;
         width: 115px;
         min-width: 115px;
-        color: #828282;
+        color: var(--primary-text-color);
         align-self: center;
 
         @include md {
@@ -62,7 +62,7 @@
       }
 
       .activity {
-        color: #828282;
+        color: var(--primary-text-color);
         line-height: 23px;
         width: 100%;
       }
