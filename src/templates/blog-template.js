@@ -13,7 +13,7 @@ function BlogTemplate({ data }) {
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
   const { comments, author } = data.site?.siteMetadata;
-  const profileImage = author?.bio.thumbnail;
+  const profileImage = author?.bio.thumbnailSmall;
   const utterancesRepo = comments?.utterances?.repo;
 
   return (
@@ -109,6 +109,7 @@ export const pageQuery = graphql`
         author {
           bio {
             thumbnail
+            thumbnailSmall
           }
         }
       }
