@@ -1,7 +1,7 @@
-@use '../styles/variables'as *;
-@use '../styles/mixins'as *;
-@use '../styles/reset'as *;
-@use '../styles/colors'as *;
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+@use '../styles/reset' as *;
+@use '../styles/colors' as *;
 
 * {
   box-sizing: border-box;
@@ -17,6 +17,7 @@ html {
 
 body {
   background-color: var(--background-color) !important;
+  transition: 300ms;
 }
 
 a {
@@ -35,12 +36,39 @@ a {
   -moz-osx-font-smoothing: grayscale;
   font-family: $font-family;
   color: var(--primary-text-color);
-  @include content-horizontal-padding;
 
   .page-content {
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include content-max-width;
+
+    .blog-template-wrapper {
+      width: 100%;
+      max-width: 768px;
+    }
+  }
+
+  .page-wrapper-point {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -20;
+    overflow: hidden;
+
+    .page-wrapper-point-inner {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(100px);
+      transform: translateX(66.6%) translateY(-66.666%);
+      opacity: 0.5;
+      background-color: var(--highlight-color);
+      @include md {
+        transform: translateX(60%) translateY(-60%);
+      }
+    }
   }
 }

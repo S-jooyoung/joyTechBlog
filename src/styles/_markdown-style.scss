@@ -1,4 +1,5 @@
-@use './variables'as *;
+@use './variables' as *;
+@use './mixins' as *;
 
 .markdown .octicon {
   display: inline-block;
@@ -65,10 +66,14 @@
   line-height: 1.5;
   color: var(--content-text-color);
   font-family: $font-family;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.8;
   word-wrap: break-word;
+
+  @include md {
+    font-size: 18px;
+  }
 }
 
 .markdown details {
@@ -190,7 +195,12 @@
 .markdown kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font:
+    11px SFMono-Regular,
+    Consolas,
+    Liberation Mono,
+    Menlo,
+    monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -206,6 +216,7 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
+  color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -250,7 +261,6 @@
 }
 
 .markdown p {
-  margin-top: 0;
   margin-bottom: 10px;
   color: var(--content-text-color);
 }
@@ -291,12 +301,11 @@
 .markdown code.language-text {
   border: 1px solid rgba(0, 27, 55, 0.1);
   border-radius: 5px;
-  font-size: 85%;
   padding: 0.2em 0.4em;
 }
 
 .markdown :not(pre) > code.language-text {
-  background: #f6f8fa;
+  background: var(--button-background-color);
   color: var(--highlight-color);
   overflow-wrap: break-word;
 }
@@ -616,7 +625,12 @@
 .markdown kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font:
+    11px SFMono-Regular,
+    Consolas,
+    Liberation Mono,
+    Menlo,
+    monospace;
   line-height: 10px;
   color: #444d56;
   vertical-align: middle;
@@ -660,6 +674,10 @@
   margin: 1em 0;
 }
 
+.markdown p {
+  margin: 1.625em 0 1.625em 0;
+}
+
 .markdown hr {
   height: 0.25em;
   padding: 0;
@@ -669,8 +687,11 @@
 }
 
 .markdown blockquote {
-  padding: 0 1em;
-  color: #6a737d;
+  padding: 1.5em 1em;
+  color: var(--content-text-color);
+  background-color: var(--button-background-color);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   border-left: 0.25em solid var(--markdown-blockquote-border-color);
 }
 
@@ -792,8 +813,9 @@
   border-top: 1px solid var(--markdown-table-border-color);
 }
 
-.markdown table tr:nth-child(2n) {
-  background-color: var(--markdown-table-even-cell-background-color);
+.markdown figcaption {
+  font-size: 14px;
+  margin-bottom: 1.325rem;
 }
 
 .markdown img {
@@ -1010,20 +1032,7 @@
   vertical-align: middle;
 }
 
-// added for toc
 .markdown .table-of-contents {
-  // &::before {
-  //   padding-left: 35px;
-  //   content: 'Table of Contents';
-  //   font-weight: 500;
-  //   font-size: 15px;
-  //   margin-bottom: 3px;
-  // }
-
-  @media (max-width: 1300px) {
-    display: none;
-  }
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1054,14 +1063,15 @@
   }
 }
 
-// added for image resizing
 .markdown .gatsby-resp-image-wrapper {
   display: flex !important;
   justify-content: center !important;
   width: 100% !important;
+  min-width: 100%;
   max-height: $content-image-max-height !important;
 
   img {
+    min-width: 100%;
     max-width: 100% !important;
     max-height: $content-image-max-height !important;
     width: auto !important;
@@ -1075,6 +1085,6 @@
   display: block;
   text-align: center;
   font-style: italic;
-  font-size: 15px;
+  font-size: 16px;
   color: #6a737d;
 }

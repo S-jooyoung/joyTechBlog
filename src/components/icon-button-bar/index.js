@@ -39,7 +39,11 @@ function IconButtonBar({ links = {} }) {
         return (
           links[link] && (
             <Tooltip key={index} title={link} arrow className="icon-tooltip">
-              <IconButton size="small" href={`${link === 'email' ? `mailto:` : ``}${links[link]}`}>
+              <IconButton
+                size="small"
+                href={`${link === 'email' ? `mailto:` : ``}${links[link]}`}
+                target="_blank"
+              >
                 {IconPicker(link)}
               </IconButton>
             </Tooltip>

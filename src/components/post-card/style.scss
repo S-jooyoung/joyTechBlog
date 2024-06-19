@@ -1,13 +1,13 @@
-@use '../../styles/variables'as *;
-@use '../../styles/mixins'as *;
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
 
 .post-card-wrapper {
   min-height: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 20px;
 
   .post-card {
     display: flex;
@@ -19,7 +19,6 @@
 
     @include md {
       margin-bottom: 0;
-      flex-direction: row;
     }
 
     &:hover {
@@ -31,7 +30,9 @@
       .thumbnail {
         transform: translateY(-8px);
         transition-duration: 0.5s;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        box-shadow:
+          rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
       }
     }
 
@@ -43,25 +44,25 @@
       transition: 0.2s ease-in-out;
 
       @include md {
-        min-width: 240px;
-        min-height: 240px;
+        min-width: 200px;
+        min-height: 200px;
         margin-right: 48px;
       }
     }
 
     .title {
       font-size: 26px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 12px;
       line-height: 1.4;
 
       @include md {
-        font-size: 36px;
+        font-size: 16px;
       }
     }
 
     .description {
-      font-size: 17px;
+      font-size: 14px;
       margin-bottom: 10px;
       line-height: 1.5;
       color: var(--secondary-text-color);
@@ -69,7 +70,6 @@
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 2;
-      /* number of lines to show */
       -webkit-box-orient: vertical;
     }
 

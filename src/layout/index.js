@@ -26,15 +26,20 @@ const Layout = ({ children }) => {
   const { title, type, logo, author } = data.site.siteMetadata;
 
   return (
-    <div className="page-wrapper">
-      <PageHeader siteTitle={title || `Title`} type={type || `Type`} logo={logo || `Logo`} />
-      <main className="page-content">{children}</main>
-      <PageFooter
-        author={author.name || `Author`}
-        githubUrl={author.social?.github || `https://www.github.com`}
-      />
-      <ThemeSwitch />
-    </div>
+    <>
+      <div className="page-wrapper">
+        <div className="page-wrapper-point">
+          <div className="page-wrapper-point-inner" />
+        </div>
+        <PageHeader siteTitle={title || `Title`} type={type || `Type`} logo={logo || `Logo`} />
+        <main className="page-content">{children}</main>
+        <PageFooter
+          author={author.name || `Author`}
+          githubUrl={author.social?.github || `https://www.github.com`}
+        />
+        <ThemeSwitch />
+      </div>
+    </>
   );
 };
 

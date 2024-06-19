@@ -1,8 +1,19 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import { Autocomplete, TextField } from '@mui/material';
+import { Autocomplete, Paper, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/SearchOutlined';
 import './style.scss';
+
+const CustomPaper = (props) => (
+  <Paper
+    sx={{
+      scrollbarWidth: '5px',
+      borderRadius: '0px 0px 5px 5px',
+      boxShadow: 'none',
+    }}
+    {...props}
+  />
+);
 
 function PostSearch({ posts }) {
   return (
@@ -21,6 +32,7 @@ function PostSearch({ posts }) {
           ({ title, categories }) => title.includes(inputValue) || categories.includes(inputValue),
         )
       }
+      PaperComponent={CustomPaper}
       getOptionLabel={(option) => option.title}
       renderInput={(params) => (
         <div className="search-input-wrapper">

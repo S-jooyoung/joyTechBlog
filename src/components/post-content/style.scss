@@ -1,12 +1,13 @@
-@use '../../styles/markdown-style'as *;
-@use '../../styles/variables'as *;
-@use '../../styles/colors'as *;
+@use '../../styles/markdown-style' as *;
+@use '../../styles/variables' as *;
+@use '../../styles/colors' as *;
 
 .post-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+
   margin-bottom: 20px;
 }
 
@@ -16,6 +17,7 @@ pre.language-typescript {
 }
 
 img.gatsby-resp-image-image {
+  width: 100% !important;
   border-radius: 12px;
   border: 1px solid rgba(0, 27, 55, 0.1);
 }

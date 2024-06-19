@@ -64,7 +64,3 @@ compareX = Number(x.toString().split('').reverse().join(''));
 > <br/>
 
 **궁금하신 점이 있다면 아래 `댓글`로 남겨주세요!👇**
-
-```toc
-
-```

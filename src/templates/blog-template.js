@@ -13,20 +13,22 @@ function BlogTemplate({ data }) {
   const prevPost = data.prev && new Post(data.prev);
   const nextPost = data.next && new Post(data.next);
   const { comments, author } = data.site?.siteMetadata;
-  const profileImage = author?.bio.thumbnail;
+  const profileImage = author?.bio.thumbnailSmall;
   const utterancesRepo = comments?.utterances?.repo;
 
   return (
     <Layout>
-      <Seo
-        title={curPost?.title}
-        description={curPost?.excerpt}
-        thumbnail={curPost?.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
-      />
-      <PostHeader post={curPost} profileImage={profileImage} />
-      <PostContent html={curPost.html} />
-      <PostNavigator prevPost={prevPost} nextPost={nextPost} />
-      {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
+      <div className="blog-template-wrapper">
+        <Seo
+          title={curPost?.title}
+          description={curPost?.excerpt}
+          thumbnail={curPost?.thumbnail.childImageSharp.gatsbyImageData.images.fallback.src}
+        />
+        <PostHeader post={curPost} profileImage={profileImage} />
+        <PostContent html={curPost.html} />
+        <PostNavigator prevPost={prevPost} nextPost={nextPost} />
+        {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
+      </div>
     </Layout>
   );
 }
@@ -34,7 +36,7 @@ function BlogTemplate({ data }) {
 export default BlogTemplate;
 
 export const pageQuery = graphql`
-  query($slug: String, $nextSlug: String, $prevSlug: String) {
+  query ($slug: String, $nextSlug: String, $prevSlug: String) {
     cur: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
@@ -107,6 +109,7 @@ export const pageQuery = graphql`
         author {
           bio {
             thumbnail
+            thumbnailSmall
           }
         }
       }
