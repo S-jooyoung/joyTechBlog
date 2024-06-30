@@ -1068,12 +1068,10 @@
   justify-content: center !important;
   width: 100% !important;
   min-width: 100%;
-  max-height: $content-image-max-height !important;
 
   img {
     min-width: 100%;
     max-width: 100% !important;
-    max-height: $content-image-max-height !important;
     width: auto !important;
     height: auto !important;
     position: relative !important;
