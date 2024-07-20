@@ -1,16 +1,15 @@
-@use '../../styles/mixins'as *;
+@use '../../styles/mixins' as *;
 
 .section-header-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 
   .section-header {
     padding-bottom: 5px;
-    border-bottom: 4px solid var(--highlight-color);
     font-weight: 700;
     font-size: 30px;
-    color: var(--primary-text-color);
+    color: var(--highlight-color);
   }
 }

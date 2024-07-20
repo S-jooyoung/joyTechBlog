@@ -1,5 +1,6 @@
-@use '../../styles/variables'as *;
-@use '../../styles/mixins'as *;
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/markdown-style' as *;
 
 .project-section {
   display: flex;
@@ -8,12 +9,24 @@
   align-items: center;
   width: 100%;
 
+  .project-wrapper {
+    width: 100%;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .project {
-    padding: 15px;
+    grid-column: span 2 / span 2;
+    padding: 15px 0px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     width: 100%;
+
+    @include md {
+      grid-column: span 1 / span 1;
+    }
 
     .head {
       margin-bottom: 10px;
@@ -22,43 +35,75 @@
       font-weight: 700;
     }
 
+    .sub-title {
+      margin: 4px 0px;
+      padding: 1.5em 1em;
+      font-size: 16px;
+      color: var(--content-text-color);
+      background-color: var(--button-background-color);
+      border-radius: 5px;
+      border-left: 0.25em solid var(--markdown-blockquote-border-color);
+
+      @include md {
+        font-size: 18px;
+      }
+    }
+
     .body {
       display: flex;
       flex-direction: column;
       width: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+
+      @include md {
+        font-size: 18px;
+      }
+
+      .affiliation {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
 
       .thumbnail {
         width: 100%;
         margin-bottom: 10px;
+        border-radius: 14px;
       }
 
       .tech-stack {
+        margin: 4px 0px;
         display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
         margin-bottom: 10px;
 
         .tech {
           background-color: var(--chip-background-color);
+          color: var(--chip-color);
           border-radius: 10px;
-          font-size: 15px;
-          font-weight: 500;
+          font-size: 14px;
+          font-weight: 700;
           margin-right: 5px;
-          padding: 5px 7px 5px 7px;
+          padding: 4px 8px 4px 8px;
         }
       }
 
-      .description {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.4;
-      }
+      .project-description {
+        list-style: disc;
+        margin-top: 21px;
+        margin-left: 21px;
 
+        .description {
+          margin-bottom: 21px;
+          font-family: $font-family;
+          font-weight: 500;
+        }
+      }
 
       @include md {
         flex-direction: column;
-
-        .content {
-          margin-top: 0px;
-        }
       }
     }
   }
