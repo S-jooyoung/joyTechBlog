@@ -5,17 +5,19 @@ import Seo from '../components/seo';
 import Bio from '../components/bio';
 import TimeStampSection from '../components/timestamp-section';
 import ProjectSection from '../components/project-section';
+import IntroduceSection from '../components/introduce-section';
 
 function AboutPage({ data }) {
   const metaData = data.site.siteMetadata;
   const { author, about, language } = metaData;
-  const { timestamps, projects } = about;
+  const { timestamps, projects, introduce } = about;
   return (
     <Layout>
       <Seo title="소개 | 조이 기술 블로그, 조이 테크" />
       <Bio author={author} language={language} />
-      <TimeStampSection timestamps={timestamps} />
-      <ProjectSection projects={projects} />
+      <IntroduceSection title="Introduce." descriptions={introduce} />
+      <TimeStampSection title="Work Experience." timestamps={timestamps} />
+      <ProjectSection title="Personal Projects." projects={projects} />
     </Layout>
   );
 }
@@ -44,15 +46,22 @@ export const pageQuery = graphql`
         }
 
         about {
+          introduce
+
           timestamps {
-            date
             activity
+            activityDescription
+            job
+            jobDescriptions
+            date
             link
           }
 
           projects {
             title
-            description
+            subTitle
+            affiliation
+            descriptions
             techStack
             thumbnailUrl
             links {

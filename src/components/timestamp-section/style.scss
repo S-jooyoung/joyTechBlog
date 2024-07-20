@@ -1,4 +1,5 @@
 @use '../../styles/mixins' as *;
+@use '../../styles/markdown-style' as *;
 
 .timestamp-section {
   display: flex;
@@ -12,63 +13,100 @@
 
   .body {
     width: 100%;
-    padding: 0 10px;
 
     .timestamp {
       display: flex;
       justify-items: center;
-
+      flex-direction: column;
+      font-family: var(--font-family);
       width: 100%;
-      margin-left: 5px;
       padding: 10px 0;
-      border-left: 2px solid #bdbdbd;
-
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
+      line-height: 1.5;
 
-      &:first-child {
-        padding-top: 7px;
-      }
-
-      &:last-child {
-        padding-bottom: 7px;
-      }
-
-      &::before {
-        position: relative;
-        left: -1px;
-        content: '';
-        align-self: center;
-        width: 10px;
-        height: 10px;
-        background-color: var(--background-color);
-        border-radius: 10px;
-        transform: translatex(-50%);
-        border: 2px solid #828282;
-      }
-
-      .date {
-        margin-left: 5px;
-        margin-right: 5px;
-        width: 115px;
-        min-width: 115px;
-        color: var(--primary-text-color);
-        align-self: center;
-
-        @include md {
-          width: 200px;
-          min-width: 200px;
-        }
+      @include md {
+        font-size: 18px;
       }
 
       .activity {
-        color: var(--primary-text-color);
-        line-height: 23px;
-        width: 100%;
+        .activity-title {
+          color: var(--primary-text-color);
+          text-decoration: underline;
+          text-decoration-style: dashed;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 6px;
+          width: 100%;
+          font-size: 21px;
+          font-weight: 700;
+          transition: 300ms;
+        }
+
+        .activity-title::after {
+          content: ' ↗ ';
+          font-size: 80%;
+          vertical-align: middle;
+          font-weight: 700;
+        }
+
+        .activity-title:hover {
+          color: var(--highlight-color);
+        }
+
+        .activity-description {
+          margin: 8px 0px;
+          padding: 1.5em 1em;
+          font-size: 16px;
+          color: var(--content-text-color);
+          background-color: var(--button-background-color);
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-radius: 5px;
+          border-left: 0.25em solid var(--markdown-blockquote-border-color);
+
+          @include md {
+            font-size: 18px;
+          }
+        }
       }
 
-      .activity:hover {
-        color: var(--highlight-color);
+      .job-wrapper {
+        display: flex;
+        margin: 12px 0px;
+
+        .job {
+          width: 115px;
+          min-width: 115px;
+
+          @include md {
+            width: 200px;
+            min-width: 200px;
+          }
+
+          .job-title {
+            color: var(--primary-text-color);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+          .job-date {
+            margin-right: 5px;
+            color: var(--primary-text-color);
+            align-self: center;
+          }
+        }
+
+        .job-description {
+          list-style: disc;
+
+          .description {
+            margin-bottom: 21px;
+          }
+
+          li {
+            margin-left: 18px;
+          }
+        }
       }
     }
   }
