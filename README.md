@@ -40,8 +40,3 @@ $ npm start
 
 위의 과정을 다 진행하셨다면 배포와 개발 환경이 세팅이 끝났습니다! 🙌  
 이제 블로그 정보를 입력하게 되면 나만의 블로그가 만들어지게 됩니다. 이를 위해 `gatsby-meta-config.js`에 있는 여러값들을 변경해줍니다.
-
-## 👋 참조
-
-https://github.com/zoomkoding/zoomkoding-gatsby-blog/tree/docs
-
