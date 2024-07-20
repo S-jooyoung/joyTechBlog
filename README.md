@@ -1,10 +1,10 @@
 <h1 align="center">
-  Keyman Log,
+  Joy Tech
 </h1>
 
 ## 🔍 미리보기
 
-[Click here](https://s-jooyoung.github.io/)
+[Click here](https://joy.pe.kr/)
 
 ## ✨ 기능
 
@@ -19,12 +19,6 @@
 - 🛠 sitemap.xml, robots.txt 자동 생성
 - 📈 Google Analytics 지원
 - 🧢 Emoji 지원
-
-### 🔧 Netlify로 만들기
-
-아래 버튼을 활용하면 개인 계정에 `zoomkoding-gatsby-blog`를 사용하고 있는 Repository 생성과 Netlify에 배포를 동시에 진행할 수 있습니다. 이후에, 생성된 Repository를 clone합니다.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zoomkoding/zoomkoding-gatsby-blog)
 
 ### 🏃‍♀️ 실행하기
 
@@ -51,9 +45,3 @@ $ npm start
 
 https://github.com/zoomkoding/zoomkoding-gatsby-blog/tree/docs
 
-### 💡 버그 리포트 & 문의
-
-궁금하신 점이 있으시다면 [이슈](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/new)로 남겨주시면 최대한 빠르게 답변 드리도록 하겠습니다!🙋‍♂️
-
-> 🤔 혹시 특정 기능이 없어서 테마 사용을 망설이시거나 제안하고 싶으신 기능이 있으시다면,  
-> 👉 [여기](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/40)에 댓글 남겨주세요! 적극적으로 반영하겠습니다 :)
