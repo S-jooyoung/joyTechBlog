@@ -20,6 +20,7 @@
 - 🧢 Emoji 지원
 
 ### ❌ 주의 사항
+
 루트 경로에 있는 `google5328b2a536d6a438.html` 및 `naverbc25b2b9e393602f1725b77eff612304.html` 파일은 제가 Google Search Console과 Naver Search Advisor에 등록하기 위해 설정한 파일입니다. 이 파일들은 삭제 후 사용하시면 됩니다.
 
 ### 🔧 Netlify로 만들기
@@ -49,9 +50,11 @@ $ yarn develop
 ## ⚙️ 블로그 정보 입력하기
 
 배포와 개발 환경 설정이 완료되었습니다! 🙌
+
 - 이제 `gatsby-meta-config.js` 파일에서 블로그 정보를 입력하여 나만의 블로그를 완성하세요.
 
 ### 1. 블로그 기본 정보
+
 ```shell
 title: '', // oy
 type: '', // tech
@@ -64,8 +67,11 @@ ogImage: '', // Path to your in the 'static' folder, /ogImage.png
 ```
 
 ### 2. 댓글 설정
+
 블로그 글에 댓글 기능을 추가하고 싶다면, Utterances를 통해 설정할 수 있습니다.
+
 > utterances 사용방법은 [링크](https://utteranc.es/)를 참고하세요.
+
 ```shell
 comments: {
   utterances: {
@@ -75,7 +81,9 @@ comments: {
 ```
 
 ### 3. 글쓴이 정보
+
 글쓴이(author) 정보는 메인 페이지와 소개 페이지 상단의 ‘Bio’ 섹션에 사용되며, 이 섹션에서는 글쓴이를 소개하는 내용이 표시됩니다. description에 자신을 설명하는 문구를 입력하면 해당 문구가 표시됩니다. Bio에 표시되는 이미지를 변경하려면 assets 폴더에 원하는 파일을 추가한 후, 파일 이름을 thumbnail 및 thumbnailSmall 항목에 입력해 주시면 됩니다.
+
 ```shell
 author: {
   name: '', // 신주영
@@ -94,10 +102,13 @@ author: {
 ```
 
 ## ⚙️ 자기 소개 페이지 만들기
+
 소개 페이지 역시 gatsby-meta-config.js 파일을 통해 생성됩니다. about 하위에 있는 introduce, timestamps, projects 항목에 각각 정보를 입력하면, 소개 페이지가 자동으로 생성됩니다.
 
 ### 1. timestamps
+
 timestamp 항목에 이력을 아래와 같이 작성하시면, 입력한 순서에 따라 해당 내용이 표시됩니다.
+
 ```shell
 {
   activity: '(주)스테이빌리티',
@@ -116,8 +127,11 @@ timestamp 항목에 이력을 아래와 같이 작성하시면, 입력한 순서
   link: 'https://www.staybility.co.kr/',
 },
 ```
+
 ### 2. projects
+
 마찬가지로, 개인 프로젝트를 배열 형태로 제공해주시면, 입력한 순서에 따라 해당 내용이 표시됩니다.
+
 ```shell
 {
   title: '제주 청년 정책 통합 플랫폼 "뿌리"',
@@ -138,12 +152,17 @@ timestamp 항목에 이력을 아래와 같이 작성하시면, 입력한 순서
 ```
 
 ## ⚙️ 글 쓰기
+
 블로그에 글을 작성하려면 /content 폴더 아래에 디렉토리를 생성하고, 그 안에 index.md 파일을 만들어 마크다운 문법을 사용하여 작성하시면 됩니다.
+
 > 이 때, 폴더의 이름이 글 경로가 됩니다.
 
 ### 메타 정보
+
 index.md 파일의 상단에는 아래와 같이 emoji, title, date, author, tags, categories 정보를 포함해야 합니다.
+
 > 현재 이모지는 별도로 표시되는 화면이 없으므로, 원하는 이모지를 자유롭게 선택하시면 됩니다. (추후 삭제 예정입니다.)
+
 ```shell
 ---
 emoji: ⛅️
@@ -157,6 +176,7 @@ thumbnail: './thumbnail.png'
 ```
 
 ### 이미지 경로
+
 ```shell
 ![사진](./[이미지 파일명])
 ```
