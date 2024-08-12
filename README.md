@@ -161,10 +161,6 @@ thumbnail: './thumbnail.png'
 ![사진](./[이미지 파일명])
 ```
 
-## 👋 참조
-
-https://github.com/zoomkoding/zoomkoding-gatsby-blog/tree/docs
-
 ### 💡 버그 리포트 & 문의
 
 궁금하신 점이 있으시면 [이슈](https://github.com/S-jooyoung/joyTechBlog/issues/new)에 남겨주세요. 최대한 빠르게 답변 드리겠습니다.🙋‍♂️
