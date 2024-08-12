@@ -26,10 +26,12 @@
 
 ```bash
 # Install dependencies
-$ npm install
+$ yarn
+# or
+$ yarn install
 
 # Start development server
-$ npm start
+$ yarn develop
 ```
 
 <br/>
