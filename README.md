@@ -22,9 +22,9 @@
 
 ### 🔧 Netlify로 만들기
 
-아래 버튼을 활용하면 개인 계정에 `zoomkoding-gatsby-blog`를 사용하고 있는 Repository 생성과 Netlify에 배포를 동시에 진행할 수 있습니다. 이후에, 생성된 Repository를 clone합니다.
+아래 버튼을 활용하면 개인 계정에 `joyTechBlog`를 사용하고 있는 Repository 생성과 Netlify에 배포를 동시에 진행할 수 있습니다.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zoomkoding/zoomkoding-gatsby-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/S-jooyoung/joyTechBlog/edit/develop/README.md)
 
 ### 🏃‍♀️ 실행하기
 
@@ -44,8 +44,8 @@ $ npm start
 
 ## ⚙️ 블로그 정보 입력하기
 
-위의 과정을 다 진행하셨다면 배포와 개발 환경이 세팅이 끝났습니다! 🙌  
-이제 블로그 정보를 입력하게 되면 나만의 블로그가 만들어지게 됩니다. 이를 위해 `gatsby-meta-config.js`에 있는 여러값들을 변경해줍니다.
+배포와 개발 환경 설정이 완료되었습니다! 🙌
+- 이제 `gatsby-meta-config.js` 파일에서 블로그 정보를 입력하여 나만의 블로그를 완성하세요.
 
 ## 👋 참조
 
@@ -53,7 +53,7 @@ https://github.com/zoomkoding/zoomkoding-gatsby-blog/tree/docs
 
 ### 💡 버그 리포트 & 문의
 
-궁금하신 점이 있으시다면 [이슈](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/new)로 남겨주시면 최대한 빠르게 답변 드리도록 하겠습니다!🙋‍♂️
+궁금하신 점이 있으시면 [이슈](https://github.com/S-jooyoung/joyTechBlog/issues/new)에 남겨주세요. 최대한 빠르게 답변 드리겠습니다.🙋‍♂️
 
-> 🤔 혹시 특정 기능이 없어서 테마 사용을 망설이시거나 제안하고 싶으신 기능이 있으시다면,  
-> 👉 [여기](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/40)에 댓글 남겨주세요! 적극적으로 반영하겠습니다 :)
+> 🤔 특정 기능이 없어서 테마 사용을 망설이시거나, 제안하고 싶은 기능이 있으시면,  
+> 👉 [여기](https://github.com/S-jooyoung/joyTechBlog/issues)에 남겨주세요! 적극적으로 반영하겠습니다 :)
