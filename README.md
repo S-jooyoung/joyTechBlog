@@ -19,6 +19,9 @@
 - 📈 Google Analytics 지원
 - 🧢 Emoji 지원
 
+### ❌ 주의 사항
+루트 경로에 있는 `google5328b2a536d6a438.html` 및 `naverbc25b2b9e393602f1725b77eff612304.html` 파일은 제가 Google Search Console과 Naver Search Advisor에 등록하기 위해 설정한 파일입니다. 이 파일들은 삭제 후 사용하시면 됩니다.
+
 ### 🔧 Netlify로 만들기
 
 아래 버튼을 활용하면 개인 계정에 `joyTechBlog`를 사용하고 있는 Repository 생성과 Netlify에 배포를 동시에 진행할 수 있습니다.
