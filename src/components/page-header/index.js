@@ -5,7 +5,7 @@ import PostSearch from '../post-search';
 import './style.scss';
 import { useEffect, useState } from 'react';
 
-const PageHeader = ({ siteTitle, type, logo }) => {
+const PageHeader = ({ logo }) => {
   const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
@@ -49,8 +49,16 @@ const PageHeader = ({ siteTitle, type, logo }) => {
           <div className="page-header">
             <div className="front-section">
               <Link className="link link-logo" to="/">
-                <img className="logo" src={logo} alt="logo" />
-                <span className="primary">{siteTitle}</span> {type}
+                <img
+                  className="logo"
+                  src={logo}
+                  alt="logo"
+                  style={{
+                    width: '100px',
+                    height: '32px',
+                    objectFit: 'contain', // 원본 비율 유지
+                  }}
+                />
               </Link>
             </div>
             <div className="trailing-section">

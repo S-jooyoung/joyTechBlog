@@ -1,7 +1,5 @@
 module.exports = {
-  title: `oy`,
-  type: `tech`,
-  logo: `/logo.svg`,
+  logo: `/logo.png`,
   description: `웹 프론트엔드 개발과 관련한 포스트를 작성하고 있습니다.`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://joy.pe.kr`, // https://s-jooyoung.github.io

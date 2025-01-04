@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         <div className="page-wrapper-point">
           <div className="page-wrapper-point-inner" />
         </div>
-        <PageHeader siteTitle={title || `Title`} type={type || `Type`} logo={logo || `Logo`} />
+        <PageHeader logo={logo || `Logo`} />
         <main className="page-content">{children}</main>
         <PageFooter
           author={author.name || `Author`}
