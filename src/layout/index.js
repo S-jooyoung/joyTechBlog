@@ -10,8 +10,6 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
-          type
           logo
           author {
             name
@@ -23,7 +21,7 @@ const Layout = ({ children }) => {
       }
     }
   `);
-  const { title, type, logo, author } = data.site.siteMetadata;
+  const { logo, author } = data.site.siteMetadata;
 
   return (
     <>
