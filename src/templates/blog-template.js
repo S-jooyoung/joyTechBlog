@@ -6,7 +6,7 @@ import PostHeader from '../components/post-header';
 import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
 import PostContent from '../components/post-content';
-import Utterances from '../components/utterances';
+import Giscus from '../components/giscus';
 
 function BlogTemplate({ data }) {
   const curPost = new Post(data.cur);
@@ -14,7 +14,7 @@ function BlogTemplate({ data }) {
   const nextPost = data.next && new Post(data.next);
   const { comments, author } = data.site?.siteMetadata;
   const profileImage = author?.bio.thumbnailSmall;
-  const utterancesRepo = comments?.utterances?.repo;
+  const giscusConfig = comments?.giscus;
 
   return (
     <Layout>
@@ -27,7 +27,15 @@ function BlogTemplate({ data }) {
         <PostHeader post={curPost} profileImage={profileImage} />
         <PostContent html={curPost.html} />
         <PostNavigator prevPost={prevPost} nextPost={nextPost} />
-        {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
+        {giscusConfig && (
+          <Giscus
+            repo={giscusConfig.repo}
+            repoId={giscusConfig.repoId}
+            category={giscusConfig.category}
+            categoryId={giscusConfig.categoryId}
+            mapping={giscusConfig.mapping}
+          />
+        )}
       </div>
     </Layout>
   );
@@ -102,8 +110,12 @@ export const pageQuery = graphql`
       siteMetadata {
         siteUrl
         comments {
-          utterances {
+          giscus {
             repo
+            repoId
+            category
+            categoryId
+            mapping
           }
         }
         author {

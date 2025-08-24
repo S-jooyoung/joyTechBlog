@@ -5,7 +5,15 @@ module.exports = {
   siteUrl: `https://joy.pe.kr`, // https://s-jooyoung.github.io
   siteMap: `https://joy.pe.kr//sitemap-pages.xml`, // https://s-jooyoung.github.io/sitemap-pages.xml
   ogImage: `/ogImage.png`, // Path to your in the 'static' folder
-  comments: { utterances: { repo: 'S-jooyoung/joyTech-comments' } },
+  comments: {
+    giscus: {
+      repo: 'S-jooyoung/joyTech-comments',
+      repoId: 'R_kgDOJBiFqg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOJBiFqs4CuiOB',
+      mapping: 'pathname',
+    },
+  },
   ga: 'G-BE92GNG3XF', // Google Analytics Tracking ID
   as: 'ca-pub-4083591465738564',
   author: {
