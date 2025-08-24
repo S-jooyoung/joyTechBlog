@@ -26,3 +26,7 @@ public
 
 # VSCODE
 .vscode/
+
+# Claude
+.claude/
+CLAUDE.md

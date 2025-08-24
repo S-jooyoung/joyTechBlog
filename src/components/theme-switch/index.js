@@ -11,6 +11,9 @@ function ThemeSwitch() {
   useEffect(() => {
     setValueToLocalStorage('isDarkMode', isDarkMode);
     document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    
+    // Dispatch custom event for giscus theme change
+    window.dispatchEvent(new Event('themeChange'));
   }, [isDarkMode]);
 
   return (
