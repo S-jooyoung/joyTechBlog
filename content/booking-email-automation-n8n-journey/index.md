@@ -3,9 +3,9 @@ emoji: 🔍
 title: 하루 5시간 수작업을 발견한 개발자의 n8n 자동화 도전기 - 1편. 문제 발견과 설계
 date: '2025-08-24 22:30:00'
 author: 조이
-tags: 개발github-pages gatsby
+tags: 개발 github-pages gatsby
 categories: 개발
-thumbnail: './thumbnail.png'
+thumbnail: './thumbnail-1.png'
 ---
 
 “하루 5시간을 예약 메일 작성에만 쓰고 있는 동료를 본 적이 있나요?”
