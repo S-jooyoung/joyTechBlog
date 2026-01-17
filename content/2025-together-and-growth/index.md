@@ -119,7 +119,7 @@ shadcn/ui, Next.js, React 등 수많은 오픈소스 덕분에 개발을 편하�
 
 이번 리뉴얼에서 프론트엔드부터 백엔드까지 1인으로 담당했기에 저에게는 더 뜻깊은 서비스입니다.
 
-🔗 [https://www.amotravel.com](https://www.amotravel.com)
+🔗 [아모트래블 바로가기](https://www.ahmotravel.com/?utm_source=joy_tech_blog&utm_medium=blog&utm_campaign=blog_promotion)
 
 ### 트래블러리 서비스 오픈
 
