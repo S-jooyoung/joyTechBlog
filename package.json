@@ -3,6 +3,9 @@
   "private": false,
   "description": "A neat blog theme for developers",
   "version": "3.0.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "author": "joy <jooyoung.dev@gmail.com>",
   "dependencies": {
     "@emotion/react": "^11.9.0",
