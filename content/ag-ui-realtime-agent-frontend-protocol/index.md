@@ -63,17 +63,17 @@ AG-UI의 이벤트는 크게 **5개 카테고리**로 나뉩니다. 프론트엔
 
 "제주도 2박 3일 여행 일정 짜줘"라고 요청했을 때 이벤트가 어떻게 흐르는지 보면 바로 감이 옵니다.
 
-| 순서 | 이벤트 | 사용자가 보는 화면 |
-|:---:|---|---|
-| 1 | `RunStarted` | 로딩 표시 시작 |
-| 2 | `TextMessageContent` | "제주도 여행 일정을 검색하고 있어요..." |
-| 3 | `ToolCallStart("searchFlights")` | **항공편 검색 중...** 진행 UI 표시 |
-| 4 | `StateDelta({ flights: [...] })` | 검색 결과 3건이 화면에 나타남 |
-| 5 | `ToolCallStart("searchHotels")` | **숙소 검색 중...** 진행 UI 전환 |
-| 6 | `TextMessageContent` | "3개 항공편과 5개 숙소를 찾았어요" |
-| 7 | `StateDelta({ itinerary: {...} })` | 1일차~3일차 일정표가 화면에 렌더링 |
-| 8 | `TextMessageContent` | "일정이 완성됐어요! 확인해보세요 😊" |
-| 9 | `RunFinished` | 로딩 표시 종료 |
+| 순서 | 이벤트                             | 사용자가 보는 화면                      |
+| :--: | ---------------------------------- | --------------------------------------- |
+|  1   | `RunStarted`                       | 로딩 표시 시작                          |
+|  2   | `TextMessageContent`               | "제주도 여행 일정을 검색하고 있어요..." |
+|  3   | `ToolCallStart("searchFlights")`   | **항공편 검색 중...** 진행 UI 표시      |
+|  4   | `StateDelta({ flights: [...] })`   | 검색 결과 3건이 화면에 나타남           |
+|  5   | `ToolCallStart("searchHotels")`    | **숙소 검색 중...** 진행 UI 전환        |
+|  6   | `TextMessageContent`               | "3개 항공편과 5개 숙소를 찾았어요"      |
+|  7   | `StateDelta({ itinerary: {...} })` | 1일차~3일차 일정표가 화면에 렌더링      |
+|  8   | `TextMessageContent`               | "일정이 완성됐어요! 확인해보세요 😊"    |
+|  9   | `RunFinished`                      | 로딩 표시 종료                          |
 
 사용자는 이 과정을 실시간으로 지켜볼 수 있어요. "항공편 검색 중..." → "숙소 검색 중..." → 결과 표시까지, 에이전트가 뭘 하고 있는지 **매 순간 화면에 보이는** 거죠. 30초 동안 로딩 스피너만 보는 것과는 완전히 다른 경험이에요.
 
@@ -85,10 +85,10 @@ AG-UI의 동작 구조는 간단합니다. **서버가 이벤트를 만들어서
 
 클라이언트 쪽에서는 `@ag-ui/client`의 `HttpAgent`로 이벤트 스트림에 연결하고, 이벤트 타입별 콜백을 등록합니다. `TEXT_MESSAGE_CONTENT`가 오면 채팅창에 글자를 추가하고, `TOOL_CALL_START`가 오면 "검색 중..." 같은 진행 UI를 보여주고, `STATE_DELTA`가 오면 앱 상태를 업데이트하는 식이죠.
 
-| 역할 | 패키지 | 핵심 클래스 | 하는 일 |
-|---|---|---|---|
-| **서버** | `@ag-ui/core` | `EventEncoder` | 이벤트를 SSE 형식으로 인코딩 → 스트리밍 |
-| **클라이언트** | `@ag-ui/client` | `HttpAgent` | SSE 구독 → 이벤트 타입별 콜백으로 UI 업데이트 |
+| 역할           | 패키지          | 핵심 클래스    | 하는 일                                       |
+| -------------- | --------------- | -------------- | --------------------------------------------- |
+| **서버**       | `@ag-ui/core`   | `EventEncoder` | 이벤트를 SSE 형식으로 인코딩 → 스트리밍       |
+| **클라이언트** | `@ag-ui/client` | `HttpAgent`    | SSE 구독 → 이벤트 타입별 콜백으로 UI 업데이트 |
 
 기존에 REST API로 에이전트를 연동했다면, 응답이 올 때까지 아무것도 못 하고 기다려야 했을 거예요. AG-UI를 쓰면 **작업 과정 자체가 UI가 됩니다**. 새 프로젝트에서 직접 해보고 싶다면 `npx create-ag-ui-app my-agent-app` 한 줄이면 스캐폴딩이 끝납니다.
 
@@ -98,12 +98,12 @@ AG-UI의 동작 구조는 간단합니다. **서버가 이벤트를 만들어서
 
 AI 에이전트 생태계에는 프로토콜이 여러 개 있어서 처음에는 좀 헷갈릴 수 있어요. 각자 해결하는 문제가 다르거든요. 레이어로 정리하면 이렇습니다.
 
-| 레이어 | 프로토콜 | 방향 | 핵심 질문 | 예시 |
-|:---:|---|---|---|---|
-| 4 | **A2UI** | 에이전트 → UI 컴포넌트 | 어떤 UI를 보여줄까? | 차트, 폼, 카드 동적 생성 |
-| 3 | **AG-UI** ★ | 에이전트 → 프론트엔드 | 진행 상황을 어떻게 알릴까? | 텍스트 스트리밍, 도구 호출 UI |
-| 2 | **MCP / WebMCP** | 에이전트 ↔ 도구 | 어떤 도구를 쓸 수 있을까? | DB 조회, API 호출 |
-| 1 | **A2A** | 에이전트 ↔ 에이전트 | 다른 에이전트에게 뭘 시킬까? | 여행 에이전트 → 결제 에이전트 위임 |
+| 레이어 | 프로토콜         | 방향                   | 핵심 질문                    | 예시                               |
+| :----: | ---------------- | ---------------------- | ---------------------------- | ---------------------------------- |
+|   4    | **A2UI**         | 에이전트 → UI 컴포넌트 | 어떤 UI를 보여줄까?          | 차트, 폼, 카드 동적 생성           |
+|   3    | **AG-UI** ★      | 에이전트 → 프론트엔드  | 진행 상황을 어떻게 알릴까?   | 텍스트 스트리밍, 도구 호출 UI      |
+|   2    | **MCP / WebMCP** | 에이전트 ↔ 도구       | 어떤 도구를 쓸 수 있을까?    | DB 조회, API 호출                  |
+|   1    | **A2A**          | 에이전트 ↔ 에이전트   | 다른 에이전트에게 뭘 시킬까? | 여행 에이전트 → 결제 에이전트 위임 |
 
 여기서 주목할 건 **AG-UI와 A2UI의 관계**예요. AG-UI는 "이벤트를 어떻게 전달할지"를 정의하는 **전송 프로토콜**이고, A2UI(Google)는 "어떤 UI를 보여줄지"를 정의하는 **선언적 명세**입니다. 경쟁이 아니라 **다른 레이어**에서 작동하는 거예요.
 
@@ -143,15 +143,11 @@ WebSocket 대신 **SSE(Server-Sent Events)** 를 기본 전송 방식으로 채�
 
 ## 정리하며
 
-[이전 글의 WebMCP](/chrome-webmcp-ai-agent-web-standard/)가 **"에이전트가 뭘 할 수 있는지"** 알려주는 프로토콜이었다면, AG-UI는 **"에이전트가 뭘 하고 있는지"** 알려주는 프로토콜이에요. 방향이 반대인 이 둘을 합치면 양방향 통신이 완성됩니다.
+[이전 글의 WebMCP](/chrome-webmcp-ai-agent-web-standard/)가 **에이전트가 뭘 할 수 있는지** 알려주는 프로토콜이었다면, AG-UI는 **에이전트가 뭘 하고 있는지** 알려주는 프로토콜이에요. 방향이 반대인 이 둘을 합치면 양방향 통신이 완성됩니다.
 
-프론트엔드 개발자의 역할이 달라지고 있다고 느껴요. "화면을 그리는 것"에서 **"에이전트와 사용자 사이의 실시간 인터페이스를 설계하는 것"**으로 확장되고 있는 거죠. AG-UI 같은 프로토콜이 그 변화의 기반을 만들어가고 있고요.
+프론트엔드 개발자의 역할이 달라지고 있다고 느껴요. "화면을 그리는 것"에서 **에이전트와 사용자 사이의 실시간 인터페이스를 설계하는 것**으로 확장되고 있는 거죠. AG-UI 같은 프로토콜이 그 변화의 기반을 만들어가고 있고요.
 
 아직 초기 단계이고 생태계도 더 성장해야 하지만, 방향성은 꽤 명확하다고 느꼈습니다. 에이전트가 점점 더 복잡한 작업을 수행하게 될수록, "그 과정을 사용자에게 어떻게 보여줄 것인가"는 피할 수 없는 질문이 될 테니까요.
-
-<!-- 🎨 Gemini 이미지 생성 프롬프트:
-Cute kawaii illustration, soft pastel colors. Two round blob characters — a peach one (with a tiny antenna) and a cream one (with a tiny monitor on its head) — holding hands and looking up together at a bright soft golden star above them. A gentle glowing bi-directional arrow connects them at chest level. Tiny sparkles and small hearts float around them. Both have dot eyes, rosy cheeks, and warm hopeful smiles. Solid #6C63FF purple background. Simple, clean, minimal details, soft drop shadows. Molang/Sumikko Gurashi inspired style. No text.
-→ 파일명: future-connection.png -->
 
 ![양방향으로 연결된 캐릭터](./future-connection.png)
 
