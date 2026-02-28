@@ -30,3 +30,6 @@ public
 # Claude
 .claude/
 CLAUDE.md
+
+# Claude files
+.omc*
