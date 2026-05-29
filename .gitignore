@@ -28,7 +28,8 @@ public
 .vscode/
 
 # Claude
-.claude/
+.claude/*
+!.claude/skills/
 CLAUDE.md
 
 # Claude files
