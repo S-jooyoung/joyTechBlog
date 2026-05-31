@@ -1,6 +1,6 @@
 ---
 emoji: 🧑🏻‍💻
-title: Vercel 비용 93% 절감, 딸깍 한 번으로 끝내기 with Cloudflare proxy
+title: Vercel 이미지 최적화 비용 93% 절감하기 (Cloudflare proxy)
 date: '2026-05-29 23:00:00'
 author: 조이
 tags: Vercel Cloudflare 비용최적화 CDN egress 프론트엔드 인프라
@@ -50,7 +50,7 @@ Vercel의 "Fast Data Transfer"는 바로 이 egress, 즉 Vercel CDN에서 사용
 
 **옵션 B**(Supabase Storage + CDN)는 자산을 아예 분리하는 방법인데, 함정이 있었어요. Supabase Storage의 egress도 무료가 아니거든요(Pro 250GB 이후 GB당 $0.09). 다만 앞에 CDN을 두면 캐시 히트율이 99%까지 올라가서 Supabase egress도 거의 안 나오긴 해요. 그래도 자산 경로를 들어내고 코드를 고쳐야 해서 손이 많이 갔습니다.
 
-**옵션 C**(Cloudflare 프록시)는 도메인을 Cloudflare 뒤에 두고 정적 자산을 엣지에서 캐싱하는 방법이에요. 전송 경로 자체를 Vercel 밖으로 빼기 때문에, 폰트든 이미지든 JS든 **전송량이 얼마가 됐든 그 대부분이 Vercel 청구서에서 사라져요.** 트래픽이 더 늘어도 방어가 되는, 증상이 아니라 구조를 때리는 해결이죠. 게다가 코드 수정 없이 DNS만 바꾸면 되니 당장의 출혈도 즉시 멈출 수 있고요.
+**옵션 C**(Cloudflare 프록시)는 Cloudflare를 Vercel 앞에 **리버스 프록시**로 세우는 방법이에요. 리버스 프록시는 origin 서버(여기선 Vercel) 앞에 서서 사용자 요청을 대신 받아주는 중간 서버를 말하는데, 이렇게 도메인을 Cloudflare 뒤에 두면 정적 자산을 Cloudflare 엣지에서 캐싱할 수 있어요. 전송 경로 자체를 Vercel 밖으로 빼기 때문에, 폰트든 이미지든 JS든 **전송량이 얼마가 됐든 그 대부분이 Vercel 청구서에서 사라져요.** 트래픽이 더 늘어도 방어가 되는, 증상이 아니라 구조를 때리는 해결이죠. 게다가 코드 수정 없이 DNS만 바꾸면 되니 당장의 출혈도 즉시 멈출 수 있고요.
 
 **옵션 D**(전체 Cloudflare Pages 이전)는 OpenNext로 통째로 옮기면 egress가 완전히 무료라 비용이 $5~10까지 떨어져요. 가장 저렴하긴 해요. 그런데 저는 Vercel의 개발자 경험(DX)이 너무 좋았거든요. `git push` 한 번이면 배포되고, PR마다 프리뷰 환경이 자동으로 뜨고, 설정도 거의 손댈 게 없고요. 이 편의를 포기하고 마이그레이션 리스크까지 떠안기엔, 웬만하면 Vercel을 계속 쓰고 싶다는 마음이 더 컸어요.
 
