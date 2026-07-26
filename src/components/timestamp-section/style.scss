@@ -103,6 +103,26 @@
             margin-bottom: 21px;
           }
 
+          .description-link {
+            color: var(--primary-text-color);
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+            transition: 300ms;
+          }
+
+          .description-link::after {
+            content: ' ↗';
+            font-size: 80%;
+            vertical-align: middle;
+          }
+
+          .description-link:hover {
+            color: var(--highlight-color);
+          }
+
           li {
             margin-left: 18px;
           }
