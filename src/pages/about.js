@@ -52,7 +52,6 @@ export const pageQuery = graphql`
             activity
             activityDescription
             job
-            jobDescriptions
             date
             link
           }

@@ -1,5 +1,4 @@
 @use '../../styles/mixins' as *;
-@use '../../styles/markdown-style' as *;
 
 .timestamp-section {
   display: flex;
@@ -14,98 +13,111 @@
   .body {
     width: 100%;
 
-    .timestamp {
-      display: flex;
-      justify-items: center;
-      flex-direction: column;
-      font-family: var(--font-family);
+    .timeline {
       width: 100%;
-      padding: 10px 0;
-      font-size: 16px;
-      font-weight: 400;
+    }
+
+    .timestamp {
+      position: relative;
+      padding: 0 0 32px 28px;
+      font-family: var(--font-family);
+      font-size: 15px;
       line-height: 1.5;
 
       @include md {
-        font-size: 18px;
+        font-size: 16px;
+      }
+
+      // 점: 기간 첫 줄의 세로 중앙
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: calc(0.75em - 5px);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--highlight-color);
+      }
+
+      // 선: 점 아래에서 다음 항목의 점 윗변까지
+      &::after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: calc(0.75em + 5px);
+        bottom: calc(5px - 0.75em);
+        width: 2px;
+        background: var(--markdown-table-border-color);
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .timestamp-date {
+        font-weight: 500;
+        color: var(--content-text-color);
       }
 
       .activity {
-        .activity-title {
-          color: var(--primary-text-color);
-          text-decoration: underline;
-          text-decoration-style: dashed;
-          text-decoration-thickness: 1px;
-          text-underline-offset: 6px;
-          width: 100%;
-          font-size: 21px;
-          font-weight: 700;
-          transition: 300ms;
-        }
+        margin-top: 4px;
+      }
 
-        .activity-title::after {
+      .activity-title {
+        color: var(--primary-text-color);
+        font-size: 21px;
+        font-weight: 700;
+      }
+
+      a.activity-title {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 6px;
+        transition: 300ms;
+
+        &::after {
           content: ' ↗ ';
           font-size: 80%;
           vertical-align: middle;
           font-weight: 700;
         }
 
-        .activity-title:hover {
+        &:hover {
           color: var(--highlight-color);
         }
 
-        .activity-description {
-          margin: 8px 0px;
-          padding: 1.5em 1em;
-          font-size: 16px;
-          color: var(--content-text-color);
-          background-color: var(--button-background-color);
-          border-top-right-radius: 5px;
-          border-bottom-right-radius: 5px;
-          border-radius: 5px;
-          border-left: 0.25em solid var(--markdown-blockquote-border-color);
-
-          @include md {
-            font-size: 18px;
-          }
+        &:focus-visible {
+          color: var(--highlight-color);
+          outline: 2px solid var(--highlight-color);
+          outline-offset: 2px;
         }
       }
 
-      .job-wrapper {
-        display: flex;
-        margin: 12px 0px;
+      .job-title {
+        margin-top: 2px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--primary-text-color);
 
-        .job {
-          width: 115px;
-          min-width: 115px;
-
-          @include md {
-            width: 200px;
-            min-width: 200px;
-          }
-
-          .job-title {
-            color: var(--primary-text-color);
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 5px;
-          }
-          .job-date {
-            margin-right: 5px;
-            color: var(--primary-text-color);
-            align-self: center;
-          }
+        @include md {
+          font-size: 18px;
         }
+      }
 
-        .job-description {
-          list-style: disc;
+      .activity-description {
+        margin-top: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--content-text-color);
 
-          .description {
-            margin-bottom: 21px;
-          }
-
-          li {
-            margin-left: 18px;
-          }
+        @include md {
+          font-size: 18px;
         }
       }
     }
