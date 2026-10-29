@@ -71,9 +71,6 @@ const PageHeader = ({ logo }) => {
                 <Link className="link" id="menu" to="/posts">
                   포스트
                 </Link>
-                <Link className="introduce" to="/about">
-                  소개
-                </Link>
               </div>
             </div>
           </div>

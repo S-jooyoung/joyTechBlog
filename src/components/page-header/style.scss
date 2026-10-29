@@ -44,23 +44,6 @@
       }
     }
 
-    .introduce {
-      color: var(--introduce-text-color);
-      background-color: var(--highlight-color);
-      border-radius: 6px;
-      padding: 7px 12px;
-
-      &:hover {
-        transition: 0.5s;
-        background-color: var(--highlight-hover-color);
-      }
-
-      @include md {
-        font-weight: 600;
-        font-size: 15px;
-      }
-    }
-
     .front-section {
       .link {
         position: relative;

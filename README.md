@@ -13,7 +13,6 @@
 - 💅 코드 하이라이팅 지원
 - 💬 Utterances 댓글 기능 지원
 - ⚙️ meta-config를 통한 세부 설정 가능
-- 👨‍💻 자기 소개 페이지 내용 변경 가능
 - 📚 포스트 페이지 자동 생성
 - 🛠 sitemap.xml, robots.txt 자동 생성
 - 📈 Google Analytics 지원
@@ -82,7 +81,7 @@ comments: {
 
 ### 3. 글쓴이 정보
 
-글쓴이(author) 정보는 메인 페이지와 소개 페이지 상단의 ‘Bio’ 섹션에 사용되며, 이 섹션에서는 글쓴이를 소개하는 내용이 표시됩니다. description에 자신을 설명하는 문구를 입력하면 해당 문구가 표시됩니다. Bio에 표시되는 이미지를 변경하려면 assets 폴더에 원하는 파일을 추가한 후, 파일 이름을 thumbnail 및 thumbnailSmall 항목에 입력해 주시면 됩니다.
+글쓴이(author) 정보는 메인 페이지 상단의 ‘Bio’ 섹션에 사용되며, 이 섹션에서는 글쓴이를 소개하는 내용이 표시됩니다. description에 자신을 설명하는 문구를 입력하면 해당 문구가 표시됩니다. Bio에 표시되는 이미지를 변경하려면 assets 폴더에 원하는 파일을 추가한 후, 파일 이름을 thumbnail 및 thumbnailSmall 항목에 입력해 주시면 됩니다.
 
 ```shell
 author: {
@@ -97,47 +96,6 @@ author: {
     github: '', // https://github.com/S-jooyoung
     linkedIn: '', // https://www.linkedin.com/in/joy-shin/
     email: '', // jooyoung.dev@gmail.com
-  },
-},
-```
-
-## ⚙️ 자기 소개 페이지 만들기
-
-소개 페이지 역시 gatsby-meta-config.js 파일을 통해 생성됩니다. about 하위에 있는 introduce, timestamps, projects 항목에 각각 정보를 입력하면, 소개 페이지가 자동으로 생성됩니다.
-
-### 1. timestamps
-
-timestamp 항목에 이력을 아래와 같이 작성하시면, 입력한 순서에 따라 기간·회사·직함·한 줄 소개가 타임라인으로 표시됩니다. `link`를 비우면 회사명이 링크 없이 표시되고, `activityDescription`을 비우면 소개 줄이 생략됩니다.
-
-```shell
-{
-  activity: '(주)스테이빌리티',
-  activityDescription: '별장 조각 소유·예약 서비스',
-  job: 'Frontend Developer',
-  date: '2022.11 — 2024.08',
-  link: 'https://www.staybility.co.kr/',
-},
-```
-
-### 2. projects
-
-마찬가지로, 개인 프로젝트를 배열 형태로 제공해주시면, 입력한 순서에 따라 해당 내용이 표시됩니다.
-
-```shell
-{
-  title: '제주 청년 정책 통합 플랫폼 "뿌리"',
-  subTitle: '제주 청년들을 위한 정책 정보를 한눈에 볼 수 있도록 설계된 통합 플랫폼',
-  affiliation: '팀 프로젝트 (프론트엔드 2, 백엔드 1, 디자이너 1, 기획자 1)',
-  descriptions: [
-    '카카오와 구름에서 주최한 해커톤에서 4일간 개발한 프로젝트로 6개 팀 중 대상 수상',
-    '프론트엔드를 리드하며 화면 퍼블리싱과 API 연동 작업 진행',
-  ],
-  techStack: ['typescript', 'react', 'next.js', 'tanstack-query', 'zustand', 'tailwindcss'],
-  thumbnailUrl: 'project_ppoori.png',
-  links: {
-    github: 'https://github.com/9OORMTHON-PPOORI/ppoori-front',
-    post: 'https://joy.pe.kr/9oormthon-10th-review/',
-    demo: 'https://ppoori.vercel.app',
   },
 },
 ```
