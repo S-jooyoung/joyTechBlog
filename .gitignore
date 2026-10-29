@@ -35,3 +35,5 @@ CLAUDE.md
 
 # Claude files
 .omc*
+.omj/
+_workspace/
