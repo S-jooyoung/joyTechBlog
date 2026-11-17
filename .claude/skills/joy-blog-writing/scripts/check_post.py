@@ -20,7 +20,7 @@ BANNED = (
     "댓글로 남겨주세요",
     "궁금하신 점이 있다면",
     "읽어주셔서 감사합니다",
-    "AI의 도움을 받아",
+    "AI의 도움을 받아 작성",
     "HUMANIZE-SUMMARY",
 )
 YO_CAP = 0.20
@@ -231,9 +231,9 @@ def inline_codes(lines, kinds, start, skip=()):
 def banned_lines(lines, start):
     hits = []
     for idx in range(start, len(lines)):
-        norm = re.sub(r"\s+", " ", lines[idx].replace("`", "").replace("**", ""))
+        norm = re.sub(r"\s+", "", lines[idx].replace("`", "").replace("**", ""))
         for term in BANNED:
-            if term in norm:
+            if re.sub(r"\s+", "", term) in norm:
                 hits.append((idx, term))
     return hits
 
