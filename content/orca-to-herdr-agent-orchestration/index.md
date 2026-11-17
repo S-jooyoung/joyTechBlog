@@ -1,6 +1,6 @@
 ---
 emoji: 🧑🏻‍💻
-title: AI 에이전트 여러 개 돌리면 PC가 멈추는 이유 — Orca에서 Herdr로 옮기며 측정한 것
+title: AI 에이전트를 병렬로 돌릴 때 어느 도구가 가벼울까 — Orca와 Herdr의 앱 메모리를 재 봤습니다
 date: '2026-11-11 22:00:00'
 author: 조이
 tags: AI 에이전트 병렬실행 Herdr Orca jest 성능측정
